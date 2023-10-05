@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* CSS */
+:root { 
+  font-family: 'Inter', sans-serif; 
+
+  --gray-a1: #00000003;
+  --gray-a2: #00000006;
+  --gray-a3: #0000000f;
+  --gray-a4: #00000017;
+  --gray-a5: #0000001f;
+  --gray-a6: #00000026;
+  --gray-a7: #00000031;
+  --gray-a8: #00000044;
+  --gray-a9: #00000072;
+  --gray-a10: #0000007c;
+  --gray-a11: #0000009b;
+  --gray-a12: #000000df;
+
+  --gray-dark-a1: #00000000;
+  --gray-dark-a2: #ffffff09;
+  --gray-dark-a3: #ffffff12;
+  --gray-dark-a4: #ffffff1b;
+  --gray-dark-a5: #ffffff22;
+  --gray-dark-a6: #ffffff2c;
+  --gray-dark-a7: #ffffff3b;
+  --gray-dark-a8: #ffffff55;
+  --gray-dark-a9: #ffffff64;
+  --gray-dark-a10: #ffffff72;
+  --gray-dark-a11: #ffffffaf;
+  --gray-dark-a12: #ffffffed;
+
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.light12 {
+  color: var(--gray-a12);
+}
+.light11 {
+  color: var(--gray-a11);
+}
+.light10 {
+  color: var(--gray-a10);
+}
+.light9 {
+  color: var(--gray-a9);
+}
+.light8 {
+  color: var(--gray-a8);
+}
+.light7 {
+  color: var(--gray-a7);
+}
+.light6 {
+  color: var(--gray-a6);
+}
+.light5 {
+  color: var(--gray-a5);
+}
+.light4 {
+  color: var(--gray-a4);
+}
+.light3 {
+  color: var(--gray-a3);
+}
+.light2 {
+  color: var(--gray-a2);
+}
+.light1 {
+  color: var(--gray-a1);
+}
+
+.dark12 {
+  color: var(--gray-dark-a12);
+}
+.dark11 {
+  color: var(--gray-dark-a11);
+}
+.dark10 {
+  color: var(--gray-dark-a10);
+}
+.dark9 {
+  color: var(--gray-dark-a9);
+}
+.dark8 {
+  color: var(--gray-dark-a8);
+}
+.dark7 {
+  color: var(--gray-dark-a7);
+}
+.dark6 {
+  color: var(--gray-dark-a6);
+}
+.dark5 {
+  color: var(--gray-dark-a5);
+}
+.dark4 {
+  color: var(--gray-dark-a4);
+}
+.dark3 {
+  color: var(--gray-dark-a3);
+}
+.dark2 {
+  color: var(--gray-dark-a2);
+}
+.dark1 {
+  color: var(--gray-dark-a1);
+}
+
+.border {
+  border-color: var(--gray-dark-a6)
+}
+
+.tab-buttons {
+  display: inline-flex;
+  background-color: var(--gray-dark-a2);
+  padding: .5rem;
+}
+
+.tab-button {
+  cursor: pointer;
+  padding: 1rem
+}
+
+.tab-button.active {
+  background-color:  var(--gray-dark-a3);
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}

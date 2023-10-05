@@ -1,0 +1,68 @@
+<section>
+  <div class="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
+    <div
+      x-data="{ open: false }"
+      class="relative flex flex-col w-full py-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6">
+      <div class="flex flex-row items-center justify-between lg:justify-start">
+        <a href="/" class="lg:pr-8 text-black inline-flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 207 207" fill="none">
+            <g clip-path="url(#clip0_907_635)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M116.01 16.8719C122.762 26.2799 128.192 34.1444 128.045 34.2914C127.899 34.3649 122.321 32.0129 115.57 29.0729L103.461 23.5604L91.206 29.0729C84.528 32.0864 78.877 34.5854 78.731 34.5854C78.584 34.5854 84.088 26.6474 90.986 16.9454C97.884 7.3169 103.608 -0.547598 103.682 -0.474098C103.755 -0.400598 109.332 7.3904 116.01 16.8719ZM134.797 46.4924L138.76 50.9759L130.541 50.6084C125.991 50.3879 122.321 50.3144 122.321 50.4614C122.321 50.6084 123.642 52.0784 125.33 53.7694C131.568 60.0164 134.944 71.1154 133.549 81.0374C133.109 83.9774 132.816 86.4764 132.889 86.5494C132.962 86.6234 140.154 89.4904 148.813 92.8704C162.316 98.0894 164.518 99.1914 164.445 100.515C164.445 101.911 106.323 202.827 104.195 205.105C103.388 206.061 103.095 205.987 101.847 204.738C101.113 203.929 94.802 193.492 87.83 181.585C84.0704 175.163 80.0322 168.249 76.6835 162.515L76.681 162.511L76.272 161.81L76.268 161.803L76.266 161.799C73.596 157.226 71.407 153.478 70.218 151.45C67.503 146.82 61.192 136.015 56.2747 127.562C51.2845 119.036 45.7807 109.702 44.0194 106.762C42.2582 103.748 40.8638 100.809 41.0106 100.147C41.1574 99.2654 46.0742 97.0604 57.3755 92.7244L73.52 86.6234L73.3 79.1264C72.933 70.3804 73.814 65.3084 76.749 59.0614C80.492 51.2699 86.143 46.2719 94.802 43.2584C97.811 42.2294 101.26 42.0089 114.616 41.9354H130.834L134.797 46.4924ZM94.362 99.4864C82.106 88.3874 83.28 59.5024 96.196 53.6224C99.792 52.0049 106.69 51.7844 110.066 53.1814C120.634 57.6644 125.257 73.7614 120.193 88.3874C115.276 102.72 103.535 107.718 94.362 99.4864ZM62.733 95.8114C56.4215 98.3094 51.0644 100.514 50.9176 100.735C50.4773 101.176 99.792 122.858 102.14 123.299C102.948 123.446 115.35 118.448 129.66 112.201C149.474 103.528 155.345 100.661 154.244 100.294C153.86 100.119 152.428 99.5614 150.4 98.7714C148.167 97.9014 145.212 96.7494 142.135 95.5164L131.568 91.4004L129.073 95.5164C124.156 103.748 118.432 107.938 109.332 109.996C96.416 112.862 82.473 106.247 76.823 94.4874C75.942 92.6504 74.988 91.1804 74.768 91.2534C74.474 91.2534 69.044 93.3124 62.733 95.8114ZM104.856 161.887L105.076 127.048L131.495 115.435C146.025 109.041 158.207 103.822 158.5 103.749C158.867 103.675 158.5 104.778 157.693 106.027C156.886 107.35 145.071 127.636 131.495 151.083C117.845 174.529 106.25 194.374 105.663 195.182C104.856 196.432 104.709 191.287 104.856 161.887Z" fill="#ffffffed"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_907_635">
+                <rect width="206.23" height="206.23" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="dark12 font-bold font-display">DeSci Labs</span>
+        </a>
+        <button
+          @click="open = !open"
+          class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black lg:hidden">
+          <svg
+            class="w-6 h-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              :class="{'hidden': open, 'inline-flex': !open }"
+              class="inline-flex"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+            <path
+              :class="{'hidden': !open, 'inline-flex': open }"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav
+        :class="{'flex': open, 'hidden': !open}"
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+        <a
+          class="dark12 px-2 lg:px-6 py-2 md:px-3 text-sm font-medium lg:ml-auto"
+          href="/#features">Application</a
+        >
+        <a
+          class="dark12 px-2 lg:px-6 py-2 md:px-3 text-sm font-medium"
+          href="/#pricing">Protocol</a
+        >
+        <a
+          class="dark12 px-2 lg:px-6 py-2 md:px-3 text-sm font-medium"
+          href="/faq">Explore Publications</a
+        >
+        <a
+          style="background-color: var(--gray-dark-a5);"
+          class="dark12 items-center justify-center h-12 font-medium rounded-full inline-flex duration-200 sm:w-auto px-6 py-3 text-center w-full gap-3"
+          href="/faq">Enter App</a
+        >
+      </nav>
+    </div>
+  </div>
+</section>

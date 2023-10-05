@@ -1,5 +1,9 @@
 ---
 import Navigation from "../global/Navigation.astro";
+const { title } = Astro.props;
+const { slogan } = Astro.props;
+
+
 ---
 
 
@@ -21,10 +25,10 @@ import Navigation from "../global/Navigation.astro";
         </div>
         <p
           class="dark12 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight">
-          DeSci Nodes
+          {title}
         </p>
         <p class="dark12 lg:text-xl max-w-2xl mt-4 mx-auto text-base">
-          A reference implementation for publishing research objects on the open science network
+          {slogan}
         </p>
       </div>
       <div class="flex justify-center gap-3 mt-10 flex-col sm:flex-row">

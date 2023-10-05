@@ -1,3 +1,21 @@
+---
+const { ov_header } = Astro.props;
+const { ov_subheader } = Astro.props;
+const { ov_item1_header } = Astro.props;
+const { ov_item1_content } = Astro.props;
+const { ov_item2_header } = Astro.props;
+const { ov_item2_content } = Astro.props;
+const { ov_item3_header } = Astro.props;
+const { ov_item3_content } = Astro.props;
+const { ov_item4_header } = Astro.props;
+const { ov_item4_content } = Astro.props;
+const { ov_item5_header } = Astro.props;
+const { ov_item5_content } = Astro.props;
+const { ov_item6_header } = Astro.props;
+const { ov_item6_content } = Astro.props;
+
+---
+
 <section id="overview">
   <div
     class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12">
@@ -5,12 +23,10 @@
       <div>
         <p
           class="light12 font-extrabold lg:text-5xl text-4xl tracking-tighter">
-          The time has come <span class="lg:block"
-            >to reimagine scientific publications
-          </span>
+          {ov_header}
         </p><p
           class="mt-4 text-lg max-w-xl tracking-tight text-gray-500 mx-auto">
-          Attestations are a new primitive that WE SHOULD EXPLAIN
+          {ov_subheader}
         </p>
       </div>
     </div>
@@ -29,11 +45,10 @@
               />
             </div><p
               class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
-              Open Science best practices
+              {ov_item1_header}
             </p>
           </div><p class="text-gray-500 text-sm mt-4">
-            Certify Open Science best practices such as Open Code, Open Data, FAIR data, 
-            and Computational Reproducibility with attestations. 
+            {ov_item1_content}
           </p>
         </div>
         <div>
@@ -48,11 +63,10 @@
               />
             </div><p
               class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
-              Open Science best practices
+              {ov_item2_header}
             </p>
           </div><p class="text-gray-500 text-sm mt-4">
-            Certify Open Science best practices such as Open Code, Open Data, FAIR data, 
-            and Computational Reproducibility with attestations. 
+            {ov_item2_content}
           </p>
         </div>
         <div>
@@ -67,11 +81,10 @@
               />
             </div><p
               class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
-              Open Science best practices
+              {ov_item3_header}
             </p>
           </div><p class="text-gray-500 text-sm mt-4">
-            Certify Open Science best practices such as Open Code, Open Data, FAIR data, 
-            and Computational Reproducibility with attestations. 
+            {ov_item3_content}
           </p>
         </div>
         <div>
@@ -84,13 +97,12 @@
                 name="scan-outline"
                 role="img"
               />
-            </div><p
+              </div><p
               class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
-              Open Science best practices
+              {ov_item4_header}
             </p>
           </div><p class="text-gray-500 text-sm mt-4">
-            Certify Open Science best practices such as Open Code, Open Data, FAIR data, 
-            and Computational Reproducibility with attestations. 
+            {ov_item4_content}
           </p>
         </div><div>
           <div class="gap-3 lg:inline-flex lg:items-center">
@@ -104,11 +116,10 @@
               />
             </div><p
               class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
-              Verifiable provanance
+              {ov_item5_header}
             </p>
           </div><p class="text-gray-500 text-sm mt-4">
-            Attestations are digitally-signed FAIR digital objects with verified provenance 
-            that you control and issue to the Nodes you curate. 
+            {ov_item5_content}
           </p>
         </div><div>
           <div class="gap-3 lg:inline-flex lg:items-center">
@@ -122,11 +133,10 @@
               />
             </div><p
               class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
-              Unlock new curation opportunities
+              {ov_item6_header}
             </p>
           </div><p class="text-gray-500 text-sm mt-4">
-            Attestations unlock curation opportunities beyond the traditional peer-review 
-            system to differentiate and elevate your community. 
+            {ov_item6_content}
           </p>
         </div>
       </div>

@@ -1,0 +1,114 @@
+---
+const { tg_header } = Astro.props;
+const { tg1_name } = Astro.props;
+const { tg1_argument } = Astro.props;
+const { tg2_name } = Astro.props;
+const { tg2_argument } = Astro.props;
+const { tg3_name } = Astro.props;
+const { tg3_argument } = Astro.props;
+const { tg4_name } = Astro.props;
+const { tg4_argument } = Astro.props;
+---
+
+<section class="bg-gray-100">
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
+    <div class="max-w-3xl mx-auto md:text-center">
+      <h2 class="text-black font-extrabold lg:text-5xl text-4xl tracking-tight">
+        {tg_header}
+      </h2>
+    </div>
+
+  <div class="mx-auto pt-12">
+    <div
+      class="mx-auto w-full gap-8 grid grid-cols-1 lg:grid-cols-2">
+      <div class="w-full">
+        <a href="/researchers">
+          <figure class="relative h-full p-6 bg-white rounded-3xl">
+            <blockquote class="relative">
+              <p class="text-base text-gray-500">
+                {tg1_argument}
+              </p>
+            </blockquote>
+            <figcaption
+              class="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
+              <div>
+                <div
+                  class="text-lg font-semibold leading-6 text-black font-display">
+                  {tg1_name}
+                </div>
+              </div>
+              <div class="overflow-hidden rounded-full bg-gray-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                  <g clip-path="url(#clip0_990_615)">
+                    <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
+                    <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
+                    <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
+                    <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_990_615">
+                      <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="w-full">
+        <a href="/journals">
+          <figure class="relative h-full p-6 bg-white rounded-3xl">
+            <blockquote class="relative">
+              <p class="text-base text-gray-500">
+                {tg2_argument}
+              </p>
+            </blockquote>
+            <figcaption
+              class="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
+              <div>
+                <div
+                  class="text-lg font-semibold leading-6 text-black font-display">
+                  {tg2_name}
+                </div>
+              </div>
+              <div class="overflow-hidden rounded-full bg-gray-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                  <g clip-path="url(#clip0_990_615)">
+                    <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
+                    <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
+                    <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
+                    <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_990_615">
+                      <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="mx-auto w-full gap-8 grid grid-cols-1 md:grid-cols-2 pt-12">
+      <div class="flex md:justify-end">
+        <a class="light12 items-center justify-center h-12 font-medium rounded-full inline-flex duration-200 sm:w-full px-6 py-3 gap-3 text-center w-full md:w-auto bg-white" href="https://docs.desci.com" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.49999 3.16666C3.76361 3.16666 3.16666 3.76361 3.16666 4.49999V16.5C3.16666 17.2364 3.76361 17.8333 4.49999 17.8333H16.5C17.2364 17.8333 17.8333 17.2364 17.8333 16.5V11.8333C17.8333 11.4651 17.5348 11.1667 17.1667 11.1667C16.7985 11.1667 16.5 11.4651 16.5 11.8333V16.5H4.49999V4.49999L9.16666 4.49999C9.53485 4.49999 9.83332 4.20151 9.83332 3.83332C9.83332 3.46513 9.53485 3.16666 9.16666 3.16666H4.49999ZM12.5 3.83332C12.5 3.46513 12.7985 3.16666 13.1667 3.16666H17.1667C17.257 3.16666 17.3432 3.18465 17.4218 3.21724C17.5005 3.24978 17.5741 3.298 17.6381 3.36192C17.7682 3.49209 17.8333 3.66271 17.8333 3.83332V7.83332C17.8333 8.20151 17.5348 8.49999 17.1667 8.49999C16.7985 8.49999 16.5 8.20151 16.5 7.83332V5.4428L9.63806 12.3047C9.37771 12.5651 8.9556 12.5651 8.69525 12.3047C8.4349 12.0444 8.4349 11.6223 8.69525 11.3619L15.5572 4.49999H13.1667C12.7985 4.49999 12.5 4.20151 12.5 3.83332Z" fill="#161616"/>
+          </svg>{tg3_name}
+        </a>
+      </div>
+      <div class="flex">
+        <a class="light12 items-center justify-center h-12 font-medium rounded-full inline-flex duration-200 sm:w-full px-6 py-3 gap-3 text-center w-full md:w-auto bg-white" href="https://docs.desci.com" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.49999 3.16666C3.76361 3.16666 3.16666 3.76361 3.16666 4.49999V16.5C3.16666 17.2364 3.76361 17.8333 4.49999 17.8333H16.5C17.2364 17.8333 17.8333 17.2364 17.8333 16.5V11.8333C17.8333 11.4651 17.5348 11.1667 17.1667 11.1667C16.7985 11.1667 16.5 11.4651 16.5 11.8333V16.5H4.49999V4.49999L9.16666 4.49999C9.53485 4.49999 9.83332 4.20151 9.83332 3.83332C9.83332 3.46513 9.53485 3.16666 9.16666 3.16666H4.49999ZM12.5 3.83332C12.5 3.46513 12.7985 3.16666 13.1667 3.16666H17.1667C17.257 3.16666 17.3432 3.18465 17.4218 3.21724C17.5005 3.24978 17.5741 3.298 17.6381 3.36192C17.7682 3.49209 17.8333 3.66271 17.8333 3.83332V7.83332C17.8333 8.20151 17.5348 8.49999 17.1667 8.49999C16.7985 8.49999 16.5 8.20151 16.5 7.83332V5.4428L9.63806 12.3047C9.37771 12.5651 8.9556 12.5651 8.69525 12.3047C8.4349 12.0444 8.4349 11.6223 8.69525 11.3619L15.5572 4.49999H13.1667C12.7985 4.49999 12.5 4.20151 12.5 3.83332Z" fill="#161616"/>
+          </svg>{tg4_name}
+        </a>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>

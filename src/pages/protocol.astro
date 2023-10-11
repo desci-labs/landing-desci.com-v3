@@ -3,26 +3,26 @@
 // INPUT CONTENT FOR HERO SECTION HERE
 
 const title = "DeSci Protocol"
-const slogan = "Networking technology to power the future of biomedical research publishing"
+const slogan = "Networking technology to power the future of research publishing"
 
 
 
 
 // INPUT CONTENT FOR OVERVIEW SECTION HERE
 
-const ov_header = "An Open Science Network where anyone can build, collaborate and contribute to moving science forward"
+const ov_header = "A new frontier for open science"
 const ov_subheader = "The DeSci Protocol enables researchers to publish research objects, curation communities to issue attestations, and application developers to build the next-generation of open science tools."
 
 // Overview Items
 
-const ov_item1_header = "Researchers"
-const ov_item1_content = "Publish research objectson an distributed network."
+const ov_item1_header = "A new model for research publications"
+const ov_item1_content = "Create interoperable research objects stored on an open protocol that contain code, data, and much more."
 
-const ov_item2_header = "Curation Communities"
-const ov_item2_content = "Curate research objects with digitally-signed attestations."
+const ov_item2_header = "Curate with pluralistic markers of quality"
+const ov_item2_content = "Explore new opportunities for curation by issuing badges attesting to open science best practices. Unbundle the certification process and make your value adds known."
 
-const ov_item3_header = "Application Developers"
-const ov_item3_content = "Build applicationsto accelerate science."
+const ov_item3_header = "Open credit and participation"
+const ov_item3_content = "Unlocks radically new incentives to improve the robustness and the richness of the scientific record."
 
 const ov_item4_header = "Built on an open protocol"
 const ov_item4_content = "Certify Open Science best practices such as Open Code, Open Data, FAIR data, and Computational Reproducibility with attestations."
@@ -34,8 +34,23 @@ const ov_item6_header = "Credit with ORCiD"
 const ov_item6_content = "Certify Open Science best practices such as Open Code, Open Data, FAIR data, and Computational Reproducibility with attestations."
 
 
+// INPUT CONTENT FOR TARGET GROUP SECTION
 
+const tg_header = "Join an open science network where anyone can build, collaborate and contribute to moving science forward"
 
+// Target Group Items
+
+const tg1_name = "Researchers"
+const tg1_argument = "Give your research the stage it deserves"
+
+const tg2_name = "Journals & Curation Communities"
+const tg2_argument = "Lead open science forward"
+
+const tg3_name = "Application Developers"
+const tg3_argument = "Build applications to accelerate science"
+
+const tg4_name = "Network Operators"
+const tg4_argument = "Power the Open Science network"
 
 // INPUT SECTION END
 
@@ -50,11 +65,13 @@ const ov_item6_content = "Certify Open Science best practices such as Open Code,
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ProtocolHero from "../components/landing/ProtocolHero.astro";
-import Testimonial from "../components/global/Testimonial.astro";
+import TargetGroups from "../components/global/TargetGroups.astro";
 import Cta from "../components/global/Cta.astro";
 import Footer from "../components/global/Footer.astro";
 import { AstroSeo } from "@astrolib/seo";
 import Onhold from "../components/landing/Onhold.astro";
+import Overview from "../components/landing/Overview3.astro";
+
 
 
 
@@ -123,7 +140,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
   <ProtocolHero 
     slogan={slogan} 
     title={title} />
-  <Testimonial
+    <Overview 
     ov_header={ov_header} 
     ov_subheader={ov_subheader}
     ov_item1_header={ov_item1_header}
@@ -131,12 +148,16 @@ Use AstroSeo in all the pages you want different Seo than the index page
     ov_item2_header={ov_item2_header}
     ov_item2_content={ov_item2_content}
     ov_item3_header={ov_item3_header}
-    ov_item3_content={ov_item3_content}
-    ov_item4_header={ov_item4_header}
-    ov_item4_content={ov_item4_content}
-    ov_item5_header={ov_item5_header}
-    ov_item5_content={ov_item5_content}
-    ov_item6_header={ov_item6_header}
-    ov_item6_content={ov_item6_content} />
+    ov_item3_content={ov_item3_content}/>
+  <TargetGroups
+    tg_header={tg_header}
+    tg1_name={tg1_name}
+    tg1_argument={tg1_argument}
+    tg2_name={tg2_name}
+    tg2_argument={tg2_argument}
+    tg3_name={tg3_name}
+    tg3_argument={tg3_argument}
+    tg4_name={tg4_name}
+    tg4_argument={tg4_argument}/>
   <Footer />
 </BaseLayout>

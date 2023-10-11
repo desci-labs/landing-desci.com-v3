@@ -1,0 +1,93 @@
+---
+const { ov_header } = Astro.props;
+const { ov_subheader } = Astro.props;
+const { ov_item1_header } = Astro.props;
+const { ov_item1_content } = Astro.props;
+const { ov_item2_header } = Astro.props;
+const { ov_item2_content } = Astro.props;
+const { ov_item3_header } = Astro.props;
+const { ov_item3_content } = Astro.props;
+const { ov_item4_header } = Astro.props;
+const { ov_item4_content } = Astro.props;
+const { ov_item5_header } = Astro.props;
+const { ov_item5_content } = Astro.props;
+const { ov_item6_header } = Astro.props;
+const { ov_item6_content } = Astro.props;
+
+---
+
+<section id="overview">
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12">
+    <div class="mx-auto max-w-3xl lg:text-center">
+      <div>
+        <p
+          class="light12 font-extrabold lg:text-5xl text-4xl tracking-tighter">
+          {ov_header}
+        </p><p
+          class="mt-4 text-lg max-w-xl tracking-tight text-gray-500 mx-auto">
+          {ov_subheader}
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto pt-12">
+      <div
+        class="mx-auto w-full gap-12 grid grid-cols-1 lg:gap-24 lg:grid-cols-3">
+        <div>
+          <div class="gap-3 lg:inline-flex lg:items-center">
+            <div
+              class="items-center justify-center text-accent-500 bg-gray-100 rounded-xl flex h-10 w-10">
+              <ion-icon
+                aria-label="scan outline"
+                class="hydrated md h-5 w-5"
+                name="scan-outline"
+                role="img"
+              />
+            </div><p
+              class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
+              {ov_item1_header}
+            </p>
+          </div><p class="text-gray-500 text-sm mt-4">
+            {ov_item1_content}
+          </p>
+        </div>
+        <div>
+          <div class="gap-3 lg:inline-flex lg:items-center">
+            <div
+              class="items-center justify-center text-accent-500 bg-gray-100 rounded-xl flex h-10 w-10">
+              <ion-icon
+                aria-label="scan outline"
+                class="hydrated md h-5 w-5"
+                name="scan-outline"
+                role="img"
+              />
+            </div><p
+              class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
+              {ov_item2_header}
+            </p>
+          </div><p class="text-gray-500 text-sm mt-4">
+            {ov_item2_content}
+          </p>
+        </div>
+        <div>
+          <div class="gap-3 lg:inline-flex lg:items-center">
+            <div
+              class="items-center justify-center text-accent-500 bg-gray-100 rounded-xl flex h-10 w-10">
+              <ion-icon
+                aria-label="scan outline"
+                class="hydrated md h-5 w-5"
+                name="scan-outline"
+                role="img"
+              />
+            </div><p
+              class="mt-4 text-lg font-semibold leading-6 text-black font-display lg:mt-0">
+              {ov_item3_header}
+            </p>
+          </div><p class="text-gray-500 text-sm mt-4">
+            {ov_item3_content}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

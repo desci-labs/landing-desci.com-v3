@@ -1,4 +1,5 @@
 ---
+const { ov_audience } = Astro.props;
 const { ov_header } = Astro.props;
 const { ov_subheader } = Astro.props;
 const { ov_item1_header } = Astro.props;
@@ -7,12 +8,6 @@ const { ov_item2_header } = Astro.props;
 const { ov_item2_content } = Astro.props;
 const { ov_item3_header } = Astro.props;
 const { ov_item3_content } = Astro.props;
-const { ov_item4_header } = Astro.props;
-const { ov_item4_content } = Astro.props;
-const { ov_item5_header } = Astro.props;
-const { ov_item5_content } = Astro.props;
-const { ov_item6_header } = Astro.props;
-const { ov_item6_content } = Astro.props;
 
 ---
 
@@ -21,6 +16,10 @@ const { ov_item6_content } = Astro.props;
     class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12">
     <div class="mx-auto max-w-3xl lg:text-center">
       <div>
+        <p
+          class="light12 font-extrabold lg:text-7xl text-6xl tracking-tighter">
+          {ov_audience}
+        </p>
         <p
           class="light12 font-extrabold lg:text-5xl text-4xl tracking-tighter">
           {ov_header}
@@ -91,3 +90,5 @@ const { ov_item6_content } = Astro.props;
     </div>
   </div>
 </section>
+
+

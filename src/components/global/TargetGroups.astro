@@ -22,76 +22,68 @@ const { tg4_argument } = Astro.props;
   <div class="mx-auto pt-12">
     <div
       class="mx-auto w-full gap-8 grid grid-cols-1 lg:grid-cols-2">
-      <div class="w-full">
+
+
+      <div>
         <a href="/researchers">
-          <figure class="relative h-full p-6 bg-white rounded-3xl">
-            <blockquote class="relative">
-              <p class="text-base text-gray-500">
-                {tg1_argument}
-              </p>
-            </blockquote>
-            <figcaption
-              class="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
-              <div>
-                <div
-                  class="text-lg font-semibold leading-6 text-black font-display">
-                  {tg1_name}
-                </div>
+          <div class="bg-white h-full p-6 rounded-2xl hover:bg-gray-200">
+            <div class="flex items-center justify-between">
+              <div
+                class="text-lg font-semibold leading-6 text-black font-display">
+                {tg1_name}
               </div>
-              <div class="overflow-hidden rounded-full bg-gray-50">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                  <g clip-path="url(#clip0_990_615)">
-                    <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
-                    <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
-                    <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
-                    <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_990_615">
-                      <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-            </figcaption>
-          </figure>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                <g clip-path="url(#clip0_990_615)">
+                  <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
+                  <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
+                  <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
+                  <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_990_615">
+                    <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>    
+            <p class="text-base text-gray-500 pt-6">
+              {tg1_argument}
+            </p>
+          </div>
         </a>
       </div>
-      <div class="w-full">
-        <a href="/journals">
-          <figure class="relative h-full p-6 bg-white rounded-3xl">
-            <blockquote class="relative">
-              <p class="text-base text-gray-500">
-                {tg2_argument}
-              </p>
-            </blockquote>
-            <figcaption
-              class="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
-              <div>
-                <div
-                  class="text-lg font-semibold leading-6 text-black font-display">
-                  {tg2_name}
-                </div>
+
+      <div>
+        <a href="/researchers">
+          <div class="bg-white h-full p-6 rounded-2xl hover:bg-gray-200">
+            <div class="flex items-center justify-between">
+              <div
+                class="text-lg font-semibold leading-6 text-black font-display">
+                {tg2_name}
               </div>
-              <div class="overflow-hidden rounded-full bg-gray-50">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                  <g clip-path="url(#clip0_990_615)">
-                    <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
-                    <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
-                    <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
-                    <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_990_615">
-                      <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-            </figcaption>
-          </figure>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                <g clip-path="url(#clip0_990_615)">
+                  <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
+                  <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
+                  <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
+                  <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_990_615">
+                    <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>    
+            <p class="text-base text-gray-500 pt-6">
+              {tg2_argument}
+            </p>
+          </div>
         </a>
       </div>
+
+
+      
     </div>
     <div class="mx-auto w-full gap-8 grid grid-cols-1 md:grid-cols-2 pt-12">
       <div class="flex md:justify-end">

@@ -44,22 +44,21 @@
       </div>
       <nav
         :class="{'flex': open, 'hidden': !open}"
-        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row gap-4">
         <a
-          class="dark12 px-2 lg:px-6 py-2 md:px-3 font-medium lg:ml-auto"
+          class="text-gray-300 hover:text-white px-2 lg:px-3 py-2 md:px-3 font-medium lg:ml-auto"
           href="/researchers">Researchers</a
         >
         <a
-          class="dark12 px-2 lg:px-6 py-2 md:px-3 font-medium"
+          class="text-gray-300 hover:text-white px-2 lg:px-3 py-2 md:px-3 font-medium "
           href="/journals">Journals</a
         >
         <a
-          class="dark12 px-2 lg:px-6 py-2 md:px-3 font-medium"
+          class="text-gray-300 hover:text-white px-2 lg:px-3 py-2 md:px-3 font-medium "
           href="/faq">Explore Publications</a
         >
         <a
-          style="background-color: var(--gray-dark-a3); backdrop-filter: blur(8px);"
-          class="dark12 items-center justify-center h-12 font-medium rounded-full inline-flex duration-200 sm:w-auto px-6 py-3 text-center w-full gap-3"
+          class="button-secondary"
           href="/login">Enter App</a
         >
       </nav>

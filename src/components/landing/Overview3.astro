@@ -4,10 +4,13 @@ const { ov_header } = Astro.props;
 const { ov_subheader } = Astro.props;
 const { ov_item1_header } = Astro.props;
 const { ov_item1_content } = Astro.props;
+const { ov_item1_icon } = Astro.props;
 const { ov_item2_header } = Astro.props;
 const { ov_item2_content } = Astro.props;
+const { ov_item2_icon } = Astro.props;
 const { ov_item3_header } = Astro.props;
 const { ov_item3_content } = Astro.props;
+const { ov_item3_icon } = Astro.props;
 
 ---
 
@@ -35,11 +38,11 @@ const { ov_item3_content } = Astro.props;
         <div>
           <div class="gap-3 lg:inline-flex lg:items-center">
             <div
-              class="items-center justify-center text-accent-500 bg-gray-100 rounded-xl flex h-10 w-10">
+              class="items-center justify-center text-black bg-gray-100 rounded-xl flex h-10 w-10">
               <ion-icon
                 aria-label="scan outline"
                 class="hydrated md h-5 w-5"
-                name="scan-outline"
+                name={ov_item1_icon}
                 role="img"
               />
             </div><p
@@ -53,11 +56,11 @@ const { ov_item3_content } = Astro.props;
         <div>
           <div class="gap-3 lg:inline-flex lg:items-center">
             <div
-              class="items-center justify-center text-accent-500 bg-gray-100 rounded-xl flex h-10 w-10">
+              class="items-center justify-center text-black bg-gray-100 rounded-xl flex h-10 w-10">
               <ion-icon
                 aria-label="scan outline"
                 class="hydrated md h-5 w-5"
-                name="scan-outline"
+                name={ov_item2_icon}
                 role="img"
               />
             </div><p
@@ -71,11 +74,11 @@ const { ov_item3_content } = Astro.props;
         <div>
           <div class="gap-3 lg:inline-flex lg:items-center">
             <div
-              class="items-center justify-center text-accent-500 bg-gray-100 rounded-xl flex h-10 w-10">
+              class="items-center justify-center text-black bg-gray-100 rounded-xl flex h-10 w-10">
               <ion-icon
                 aria-label="scan outline"
                 class="hydrated md h-5 w-5"
-                name="scan-outline"
+                name={ov_item3_icon}
                 role="img"
               />
             </div><p

@@ -10,11 +10,11 @@ const { tg4_name } = Astro.props;
 const { tg4_argument } = Astro.props;
 ---
 
-<section class="bg-gray-100">
+<section style="background-color: #232326">
   <div
     class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
     <div class="max-w-3xl mx-auto md:text-center">
-      <h2 class="text-black font-extrabold lg:text-5xl text-4xl tracking-tight">
+      <h2 class="text-white font-extrabold lg:text-5xl text-4xl tracking-tight">
         {tg_header}
       </h2>
     </div>
@@ -24,81 +24,66 @@ const { tg4_argument } = Astro.props;
       class="mx-auto w-full gap-8 grid grid-cols-1 lg:grid-cols-2">
 
 
-      <div>
-        <a href="/researchers">
-          <div class="bg-white h-full p-6 rounded-2xl hover:bg-gray-200">
-            <div class="flex items-center justify-between">
-              <div
-                class="text-lg font-semibold leading-6 text-black font-display">
-                {tg1_name}
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                <g clip-path="url(#clip0_990_615)">
-                  <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
-                  <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
-                  <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
-                  <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_990_615">
-                    <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>    
-            <p class="text-base text-gray-500 pt-6">
-              {tg1_argument}
-            </p>
+      <a href="/researchers">
+        <div class="text-white border border-white hover:text-black hover:bg-white h-full p-6 rounded-2xl hover:bg-white flex flex-col md:items-center gap-6 transition duration-300" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+            <path d="M36.6654 17.3333V27.3333M36.6654 17.3333L19.9987 9L3.33203 17.3333L19.9987 25.6667L36.6654 17.3333Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 20.666V28.9993C15 33.9993 25 33.9993 30 28.9993V20.666" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div
+          class="flex md:justify-center w-full text-2xl font-semibold leading-6 font-display">
+            {tg1_name}
           </div>
-        </a>
-      </div>
+          <p class="text-base">
+            {tg1_argument}
+          </p>
+        </div>
+      </a>
 
-      <div>
-        <a href="/researchers">
-          <div class="bg-white h-full p-6 rounded-2xl hover:bg-gray-200">
-            <div class="flex items-center justify-between">
-              <div
-                class="text-lg font-semibold leading-6 text-black font-display">
-                {tg2_name}
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                <g clip-path="url(#clip0_990_615)">
-                  <path d="M6.41406 12.6307L20.0301 4.76953L33.6461 12.6307V28.3532L20.0301 36.2143L6.41406 28.3532V12.6307Z" stroke="#171717" stroke-width="0.43956"/>
-                  <path d="M3.04297 10.687L20.0277 0.880859L37.0124 10.687V30.2991L20.0277 40.1053L3.04297 30.2991V10.687Z" stroke="#171717" stroke-width="0.43956"/>
-                  <path d="M9.80469 14.5908L20.026 8.68945L30.2473 14.5908V26.3934L20.026 32.2945L9.80469 26.3934V14.5908Z" stroke="#171717" stroke-width="0.43956"/>
-                  <path d="M13.3633 16.644L20.0301 12.7949L26.6968 16.644V24.3422L20.0301 28.1912L13.3633 24.3422V16.644Z" stroke="#171717" stroke-width="0.43956"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_990_615">
-                    <rect width="40" height="39.7802" fill="white" transform="translate(0 0.609375)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>    
-            <p class="text-base text-gray-500 pt-6">
-              {tg2_argument}
-            </p>
+      <a href="/journals">
+        <div class="border border-white h-full p-6 rounded-2xl hover:bg-white flex flex-col md:items-center gap-6 text-white hover:text-black transition duration-300" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+            <path d="M3.33203 5.33398H13.332C15.1001 5.33398 16.7958 6.03636 18.0461 7.28661C19.2963 8.53685 19.9987 10.2325 19.9987 12.0007V35.334C19.9987 34.0079 19.4719 32.7361 18.5342 31.7984C17.5966 30.8608 16.3248 30.334 14.9987 30.334H3.33203V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M36.6667 5.33398H26.6667C24.8986 5.33398 23.2029 6.03636 21.9526 7.28661C20.7024 8.53685 20 10.2325 20 12.0007V35.334C20 34.0079 20.5268 32.7361 21.4645 31.7984C22.4021 30.8608 23.6739 30.334 25 30.334H36.6667V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div
+          class="flex w-full text-2xl font-semibold leading-6 font-display md:justify-center ">
+            {tg2_name}
           </div>
-        </a>
-      </div>
+          <p class="text-base">
+            {tg2_argument}
+          </p>
+        </div>
+      </a>
 
 
-      
-    </div>
-    <div class="mx-auto w-full gap-8 grid grid-cols-1 md:grid-cols-2 pt-12">
-      <div class="flex md:justify-end">
-        <a class="light12 items-center justify-center h-12 font-medium rounded-full inline-flex duration-200 sm:w-full px-6 py-3 gap-3 text-center w-full md:w-auto bg-white" href="https://docs.desci.com" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.49999 3.16666C3.76361 3.16666 3.16666 3.76361 3.16666 4.49999V16.5C3.16666 17.2364 3.76361 17.8333 4.49999 17.8333H16.5C17.2364 17.8333 17.8333 17.2364 17.8333 16.5V11.8333C17.8333 11.4651 17.5348 11.1667 17.1667 11.1667C16.7985 11.1667 16.5 11.4651 16.5 11.8333V16.5H4.49999V4.49999L9.16666 4.49999C9.53485 4.49999 9.83332 4.20151 9.83332 3.83332C9.83332 3.46513 9.53485 3.16666 9.16666 3.16666H4.49999ZM12.5 3.83332C12.5 3.46513 12.7985 3.16666 13.1667 3.16666H17.1667C17.257 3.16666 17.3432 3.18465 17.4218 3.21724C17.5005 3.24978 17.5741 3.298 17.6381 3.36192C17.7682 3.49209 17.8333 3.66271 17.8333 3.83332V7.83332C17.8333 8.20151 17.5348 8.49999 17.1667 8.49999C16.7985 8.49999 16.5 8.20151 16.5 7.83332V5.4428L9.63806 12.3047C9.37771 12.5651 8.9556 12.5651 8.69525 12.3047C8.4349 12.0444 8.4349 11.6223 8.69525 11.3619L15.5572 4.49999H13.1667C12.7985 4.49999 12.5 4.20151 12.5 3.83332Z" fill="#161616"/>
-          </svg>{tg3_name}
-        </a>
-      </div>
-      <div class="flex">
-        <a class="light12 items-center justify-center h-12 font-medium rounded-full inline-flex duration-200 sm:w-full px-6 py-3 gap-3 text-center w-full md:w-auto bg-white" href="https://docs.desci.com" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.49999 3.16666C3.76361 3.16666 3.16666 3.76361 3.16666 4.49999V16.5C3.16666 17.2364 3.76361 17.8333 4.49999 17.8333H16.5C17.2364 17.8333 17.8333 17.2364 17.8333 16.5V11.8333C17.8333 11.4651 17.5348 11.1667 17.1667 11.1667C16.7985 11.1667 16.5 11.4651 16.5 11.8333V16.5H4.49999V4.49999L9.16666 4.49999C9.53485 4.49999 9.83332 4.20151 9.83332 3.83332C9.83332 3.46513 9.53485 3.16666 9.16666 3.16666H4.49999ZM12.5 3.83332C12.5 3.46513 12.7985 3.16666 13.1667 3.16666H17.1667C17.257 3.16666 17.3432 3.18465 17.4218 3.21724C17.5005 3.24978 17.5741 3.298 17.6381 3.36192C17.7682 3.49209 17.8333 3.66271 17.8333 3.83332V7.83332C17.8333 8.20151 17.5348 8.49999 17.1667 8.49999C16.7985 8.49999 16.5 8.20151 16.5 7.83332V5.4428L9.63806 12.3047C9.37771 12.5651 8.9556 12.5651 8.69525 12.3047C8.4349 12.0444 8.4349 11.6223 8.69525 11.3619L15.5572 4.49999H13.1667C12.7985 4.49999 12.5 4.20151 12.5 3.83332Z" fill="#161616"/>
-          </svg>{tg4_name}
-        </a>
-      </div>
-    </div>
+      <a href="https://docs.desci.com">
+        <div class="border text-white border-gray-200 hover:bg-white h-full p-6 rounded-2xl hover:text-black transition duration-300">
+          <div class="flex items-center justify-between">
+            <div
+            class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
+              {tg3_name}
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M19.349 2.23438C18.2903 2.23438 17.3725 2.96733 17.1384 3.99989L16.5036 6.80034C15.4929 7.09425 14.5288 7.49675 13.6248 7.99409L11.1954 6.46268C10.2998 5.89807 9.13258 6.02872 8.38392 6.77738L6.76768 8.39362C6.01902 9.14228 5.88837 10.3095 6.45298 11.2051L7.98494 13.6354C7.48803 14.5391 7.08589 15.5029 6.79226 16.5132L3.99207 17.1481C2.95952 17.3821 2.22656 18.2999 2.22656 19.3586V21.6443C2.22656 22.7031 2.95952 23.6208 3.99207 23.8549L6.79259 24.4898C7.08638 25.5004 7.48875 26.4645 7.98594 27.3684L6.45423 29.7982C5.88963 30.6939 6.02028 31.8611 6.76893 32.6097L8.38518 34.226C9.13383 34.9746 10.301 35.1053 11.1967 34.5407L13.6267 33.0089C14.5301 33.5057 15.4936 33.9079 16.5036 34.2016L17.1384 37.0021C17.3725 38.0346 18.2903 38.7676 19.349 38.7676H21.6347C22.6935 38.7676 23.6112 38.0346 23.8453 37.0021L24.48 34.2026C25.4908 33.9089 26.4551 33.5067 27.3592 33.0095L29.789 34.5412C30.6847 35.1058 31.8519 34.9752 32.6006 34.2265L34.2168 32.6103C34.9655 31.8616 35.0961 30.6944 34.5315 29.7987L33.0004 27.3698C33.4979 26.4654 33.9006 25.5008 34.1945 24.4896L36.9943 23.8549C38.0268 23.6208 38.7598 22.7031 38.7598 21.6443V19.3586C38.7598 18.2999 38.0268 17.3821 36.9943 17.1481L34.1949 16.5134C33.9011 15.5025 33.4987 14.5381 33.0014 13.6339L34.5328 11.2046C35.0974 10.3089 34.9667 9.14174 34.2181 8.39308L32.6018 6.77684C31.8532 6.02818 30.6859 5.89753 29.7903 6.46213L27.3611 7.99344C26.4564 7.49582 25.4915 7.09318 24.48 6.7993L23.8453 3.99989C23.6112 2.96733 22.6935 2.23438 21.6347 2.23438H19.349ZM13.6146 10.6671C15.0191 9.68278 16.6442 8.99171 18.401 8.68278L19.349 4.50104H21.6347L22.5826 8.68217C24.3403 8.99073 25.9662 9.68179 27.3714 10.6664L30.999 8.37961L32.6153 9.99586L30.3285 13.6235C31.3127 15.0284 32.0035 16.6537 32.3121 18.4108L36.4931 19.3586V21.6443L32.3119 22.5922C32.0031 24.3495 31.3119 25.9751 30.3273 27.38L32.614 31.0075L30.9978 32.6237L27.3698 30.3367C25.9649 31.3207 24.3396 32.0113 22.5826 32.3198L21.6347 36.5009H19.349L18.401 32.3191C16.6449 32.0103 15.0204 31.3197 13.6162 30.336L9.98795 32.6232L8.37171 31.0069L10.6589 27.3787C9.67477 25.9742 8.98391 24.3491 8.67516 22.5924L4.49323 21.6443V19.3586L8.67497 18.4106C8.98351 16.6542 9.67403 15.0293 10.6577 13.6248L8.37046 9.9964L9.9867 8.38016L13.6146 10.6671ZM24.5615 20.5029C24.5615 22.7487 22.7409 24.5693 20.4951 24.5693C18.2492 24.5693 16.4286 22.7487 16.4286 20.5029C16.4286 18.2571 18.2492 16.4365 20.4951 16.4365C22.7409 16.4365 24.5615 18.2571 24.5615 20.5029ZM26.9615 20.5029C26.9615 24.0742 24.0664 26.9693 20.4951 26.9693C16.9238 26.9693 14.0286 24.0742 14.0286 20.5029C14.0286 16.9316 16.9238 14.0365 20.4951 14.0365C24.0664 14.0365 26.9615 16.9316 26.9615 20.5029Z" fill="currentColor"/>
+            </svg>
+          </div>    
+        </div>
+      </a>
+
+      <a href="https://docs.desci.com">
+        <div class="border text-white border-gray-200 hover:bg-white h-full p-6 rounded-2xl hover:text-black transition duration-300">
+          <div class="flex items-center justify-between">
+            <div
+            class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
+              {tg4_name}
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8307 20.4987C13.8307 22.7078 12.0399 24.4987 9.83073 24.4987C7.62159 24.4987 5.83073 22.7078 5.83073 20.4987C5.83073 18.2896 7.62159 16.4987 9.83073 16.4987C12.0399 16.4987 13.8307 18.2896 13.8307 20.4987ZM15.7324 23.6023C14.6159 25.721 12.392 27.1654 9.83073 27.1654C6.14883 27.1654 3.16406 24.1806 3.16406 20.4987C3.16406 16.8168 6.14883 13.832 9.83073 13.832C12.392 13.832 14.6159 15.2764 15.7324 17.3951L24.7754 11.7432C24.5945 11.1378 24.4974 10.4962 24.4974 9.83203C24.4974 6.15013 27.4822 3.16536 31.1641 3.16536C34.846 3.16536 37.8307 6.15013 37.8307 9.83203C37.8307 13.5139 34.846 16.4987 31.1641 16.4987C29.0081 16.4987 27.0911 15.4753 25.8725 13.8877L16.4582 19.7716C16.4841 20.0104 16.4974 20.253 16.4974 20.4987C16.4974 20.7444 16.4841 20.987 16.4582 21.2258L25.8725 27.1097C27.0911 25.5221 29.0081 24.4987 31.1641 24.4987C34.846 24.4987 37.8307 27.4835 37.8307 31.1654C37.8307 34.8473 34.846 37.832 31.1641 37.832C27.4822 37.832 24.4974 34.8473 24.4974 31.1654C24.4974 30.5011 24.5945 29.8596 24.7754 29.2542L15.7324 23.6023ZM31.1641 13.832C33.3732 13.832 35.1641 12.0412 35.1641 9.83203C35.1641 7.62289 33.3732 5.83203 31.1641 5.83203C28.9549 5.83203 27.1641 7.62289 27.1641 9.83203C27.1641 12.0412 28.9549 13.832 31.1641 13.832ZM35.1641 31.1654C35.1641 33.3745 33.3732 35.1654 31.1641 35.1654C28.9549 35.1654 27.1641 33.3745 27.1641 31.1654C27.1641 28.9562 28.9549 27.1654 31.1641 27.1654C33.3732 27.1654 35.1641 28.9562 35.1641 31.1654Z" fill="currentColor"/>
+            </svg>
+          </div>    
+        </div>
+      </a>
 
 
 

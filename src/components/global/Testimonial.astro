@@ -12,6 +12,8 @@ const { tm_item3_content } = Astro.props;
 const { tm_item3_image } = Astro.props;
 const { tm_item2_image } = Astro.props;
 const { tm_item1_image } = Astro.props;
+const { tm_item1_link } = Astro.props;
+
 
 ---
 
@@ -59,6 +61,10 @@ const { tm_item1_image } = Astro.props;
                 />
               </div>
             </figcaption>
+            <a
+              class="button-primary-black mt-6 md:w-1/2 lg:w-full"
+              href={tm_item1_link}>View Node
+          </a>
           </figure>
         </li>
         <li>
@@ -93,6 +99,10 @@ const { tm_item1_image } = Astro.props;
                 />
               </div>
             </figcaption>
+            <a
+              class="button-primary-black mt-6 md:w-1/2 lg:w-full"
+              href={tm_item1_link}>View Node
+            </a>    
           </figure>
         </li>
         <li>
@@ -127,6 +137,10 @@ const { tm_item1_image } = Astro.props;
                 />
               </div>
             </figcaption>
+            <a
+              class="button-primary-black mt-6 md:w-1/2 lg:w-full"
+              href={tm_item1_link}>View Node
+            </a>
           </figure>
         </li>
       </ul>

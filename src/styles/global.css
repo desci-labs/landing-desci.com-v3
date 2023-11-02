@@ -229,3 +229,32 @@
     width: auto;
   }
 }
+
+.profile-image {
+  width: 56px; 
+  height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-link {
+  color: var(--gray-dark-a12);
+  border-bottom: 4px solid transparent;
+  padding: 2px 2px 2px 2px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--gray-dark-a10);
+  }
+}
+
+.nav-link.active{
+  border-color: var(--gray-dark-a12);
+}

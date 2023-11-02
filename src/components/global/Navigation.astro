@@ -1,4 +1,8 @@
-<section>
+---
+const { activePage } = Astro.props;
+---
+
+<section style="background: linear-gradient(to top, transparent, rgba(22, 22, 22, 0.2));">
   <div class="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
     <div
       x-data="{ open: false }"
@@ -44,18 +48,14 @@
       </div>
       <nav
         :class="{'flex': open, 'hidden': !open}"
-        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row gap-4">
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row gap-6">
         <a
-          class="text-gray-300 hover:text-white px-2 lg:px-3 py-2 md:px-3 font-medium lg:ml-auto"
+          class={`nav-link ${activePage === 'researchers' ? 'active' : ''}`}
           href="/researchers">Researchers</a
         >
         <a
-          class="text-gray-300 hover:text-white px-2 lg:px-3 py-2 md:px-3 font-medium "
+          class={`nav-link ${activePage === 'journals' ? 'active' : ''}`}
           href="/journals">Journals</a
-        >
-        <a
-          class="text-gray-300 hover:text-white px-2 lg:px-3 py-2 md:px-3 font-medium "
-          href="/faq">Explore Publications</a
         >
         <a
           class="button-secondary"

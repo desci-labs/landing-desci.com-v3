@@ -1,0 +1,14 @@
+
+
+h1 {
+    @apply text-3xl font-bold my-4;
+}
+  
+h2 {
+    @apply text-2xl font-semibold my-3;
+}
+  
+p {
+    @apply text-base my-2;
+}
+    

@@ -1,5 +1,6 @@
 ---
 const { tg_header } = Astro.props;
+const { tg_subheader } = Astro.props;
 const { tg1_name } = Astro.props;
 const { tg1_argument } = Astro.props;
 const { tg2_name } = Astro.props;
@@ -10,13 +11,17 @@ const { tg4_name } = Astro.props;
 const { tg4_argument } = Astro.props;
 ---
 
-<section style="background-color: #232326">
+<section class="bg-dark-1 lg:h-screen lg:flex lg:items-center">
   <div
     class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
     <div class="max-w-3xl mx-auto md:text-center">
-      <h2 class="text-white font-extrabold lg:text-5xl text-4xl tracking-tight">
-        {tg_header}
-      </h2>
+      <p
+          class="text-light-12 font-extrabold lg:text-5xl text-4xl tracking-tighter">
+          {tg_header}
+        </p><p
+          class="mt-4 text-lg max-w-xl tracking-tight text-light-11 mx-auto">
+          {tg_subheader}
+        </p>
     </div>
 
   <div class="mx-auto pt-12">
@@ -24,14 +29,14 @@ const { tg4_argument } = Astro.props;
       class="mx-auto w-full gap-8 grid grid-cols-1 lg:grid-cols-2">
 
 
-      <a href="/researchers">
-        <div class="text-white border border-white hover:text-black hover:bg-white h-full p-6 rounded-2xl hover:bg-white flex flex-col md:items-center gap-6 transition duration-300" >
+      <a href="/researchers" target="_blank">
+        <div class="border border-light-3 h-full p-6 rounded-2xl bg-light-2 hover:bg-light-5 flex flex-col items-center gap-6 text-white transition duration-300" >
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
             <path d="M36.6654 17.3333V27.3333M36.6654 17.3333L19.9987 9L3.33203 17.3333L19.9987 25.6667L36.6654 17.3333Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M10 20.666V28.9993C15 33.9993 25 33.9993 30 28.9993V20.666" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <div
-          class="flex md:justify-center w-full text-2xl font-semibold leading-6 font-display">
+          class="flex justify-center text-center w-full text-2xl font-semibold leading-6 font-display">
             {tg1_name}
           </div>
           <p class="text-base">
@@ -40,14 +45,14 @@ const { tg4_argument } = Astro.props;
         </div>
       </a>
 
-      <a href="/journals">
-        <div class="border border-white h-full p-6 rounded-2xl hover:bg-white flex flex-col md:items-center gap-6 text-white hover:text-black transition duration-300" >
+      <a href="/journals" target="_blank">
+        <div class="border border-light-3 h-full p-6 rounded-2xl bg-light-2 hover:bg-light-5 flex flex-col items-center gap-6 text-white transition duration-300" >
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
             <path d="M3.33203 5.33398H13.332C15.1001 5.33398 16.7958 6.03636 18.0461 7.28661C19.2963 8.53685 19.9987 10.2325 19.9987 12.0007V35.334C19.9987 34.0079 19.4719 32.7361 18.5342 31.7984C17.5966 30.8608 16.3248 30.334 14.9987 30.334H3.33203V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M36.6667 5.33398H26.6667C24.8986 5.33398 23.2029 6.03636 21.9526 7.28661C20.7024 8.53685 20 10.2325 20 12.0007V35.334C20 34.0079 20.5268 32.7361 21.4645 31.7984C22.4021 30.8608 23.6739 30.334 25 30.334H36.6667V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <div
-          class="flex w-full text-2xl font-semibold leading-6 font-display md:justify-center ">
+          class="flex justify-center text-center w-full text-2xl font-semibold leading-6 font-display">
             {tg2_name}
           </div>
           <p class="text-base">
@@ -57,8 +62,8 @@ const { tg4_argument } = Astro.props;
       </a>
 
 
-      <a href="https://docs.desci.com">
-        <div class="border text-white border-gray-200 hover:bg-white h-full p-6 rounded-2xl hover:text-black transition duration-300">
+      <a href="https://docs.desci.com" target="_blank">
+        <div class="border text-white border-light-3 bg-light-2 hover:bg-light-5 h-full p-6 rounded-2xl transition duration-300">
           <div class="flex items-center justify-between">
             <div
             class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
@@ -71,8 +76,8 @@ const { tg4_argument } = Astro.props;
         </div>
       </a>
 
-      <a href="https://docs.desci.com">
-        <div class="border text-white border-gray-200 hover:bg-white h-full p-6 rounded-2xl hover:text-black transition duration-300">
+      <a href="https://docs.desci.com" target="_blank">
+        <div class="border text-white border-light-3 bg-light-2 hover:bg-light-5 h-full p-6 rounded-2xl transition duration-300">
           <div class="flex items-center justify-between">
             <div
             class="flex w-full justify-center text-lg font-semibold leading-6 font-display">

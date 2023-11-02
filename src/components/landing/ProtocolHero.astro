@@ -7,60 +7,59 @@ const { slogan } = Astro.props;
 ---
 
 
-<section style="background-color: #161616; background-image: url(landscape.png); background-size: cover; background-position: center">
+<section style="background-color: #161616; background-image: url(landscape.png); background-size: cover; background-position: top">
   <Navigation />
-  <div
-    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
-    <div>
-      <div class="text-center max-w-4xl mx-auto">
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="82" viewBox="0 0 76 82" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.4881 0.551137C38.4792 0.00769509 37.2647 0.00769295 36.2559 0.551137L19.237 9.71848C18.1335 10.3129 17.4453 11.4652 17.4453 12.7187V30.9361C17.4453 32.1896 18.1335 33.3419 19.237 33.9363L35.4645 42.6774L35.461 60.529C35.4607 61.8575 36.5375 62.9347 37.866 62.935C39.1946 62.9352 40.2718 61.8584 40.272 60.5299L40.2756 42.6795L56.5069 33.9363C57.6105 33.3419 58.2986 32.1896 58.2986 30.9361V12.7187C58.2986 11.4652 57.6105 10.3129 56.5069 9.71848L39.4881 0.551137ZM22.2564 13.5567L37.872 5.14524L53.4876 13.5567V30.0981L37.872 38.5096L22.2564 30.0981V13.5567Z" fill="white" fill-opacity="0.923"/>
-            <path d="M37.3948 60.7853C37.6916 60.6255 38.0487 60.6255 38.3455 60.7853L46.2055 65.0192C46.5301 65.1941 46.7325 65.533 46.7325 65.9016V74.2521C46.7325 74.6207 46.5301 74.9597 46.2055 75.1345L38.3455 79.3684C38.0487 79.5282 37.6916 79.5282 37.3948 79.3684L29.5348 75.1345C29.2102 74.9597 29.0078 74.6207 29.0078 74.2521V65.9016C29.0078 65.533 29.2102 65.1941 29.5348 65.0192L37.3948 60.7853Z" stroke="#FCFCFC" stroke-width="4.81106"/>
-            <path d="M63.8675 46.0803C64.1642 45.9204 64.5214 45.9204 64.8181 46.0803L72.6782 50.3141C73.0027 50.489 73.2051 50.8279 73.2051 51.1966V59.547C73.2051 59.9157 73.0027 60.2546 72.6782 60.4294L64.8181 64.6633C64.5214 64.8231 64.1642 64.8231 63.8675 64.6633L56.0074 60.4294C55.6829 60.2546 55.4805 59.9157 55.4805 59.547V51.1966C55.4805 50.8279 55.6829 50.489 56.0074 50.3141L63.8675 46.0803Z" stroke="#FCFCFC" stroke-width="4.81106"/>
-            <path d="M55.4805 31.5029L63.8158 35.9928C64.1404 36.1677 64.3428 36.5066 64.3428 36.8753V45.8243" stroke="#FCFCFC" stroke-width="4.81106"/>
-            <path d="M10.8089 46.1232C11.1056 45.9634 11.4628 45.9634 11.7595 46.1232L19.6196 50.3571C19.9442 50.5319 20.1465 50.8709 20.1465 51.2395V59.59C20.1465 59.9586 19.9442 60.2975 19.6196 60.4724L11.7595 64.7063C11.4628 64.8661 11.1056 64.8661 10.8089 64.7063L2.94885 60.4724C2.62427 60.2975 2.42188 59.9586 2.42188 59.59V51.2395C2.42188 50.8709 2.62427 50.5319 2.94885 50.3571L10.8089 46.1232Z" stroke="#FCFCFC" stroke-width="4.81106"/>
-            <path d="M20.1436 32.1328L11.8082 36.6227C11.4836 36.7976 11.2812 37.1365 11.2812 37.5052V46.4541" stroke="#FCFCFC" stroke-width="4.81106"/>
-          </svg>
+  <div style="background: linear-gradient(to bottom, transparent, rgba(22, 22, 22, 0.8));" class="lg:h-screen">
+      <div class="mx-auto w-full max-w-7xl justify-center px-8 py-24">
+        <div class="text-center max-w-4xl mx-auto">
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="76" height="82" viewBox="0 0 76 82" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M39.4881 0.551137C38.4792 0.00769509 37.2647 0.00769295 36.2559 0.551137L19.237 9.71848C18.1335 10.3129 17.4453 11.4652 17.4453 12.7187V30.9361C17.4453 32.1896 18.1335 33.3419 19.237 33.9363L35.4645 42.6774L35.461 60.529C35.4607 61.8575 36.5375 62.9347 37.866 62.935C39.1946 62.9352 40.2718 61.8584 40.272 60.5299L40.2756 42.6795L56.5069 33.9363C57.6105 33.3419 58.2986 32.1896 58.2986 30.9361V12.7187C58.2986 11.4652 57.6105 10.3129 56.5069 9.71848L39.4881 0.551137ZM22.2564 13.5567L37.872 5.14524L53.4876 13.5567V30.0981L37.872 38.5096L22.2564 30.0981V13.5567Z" fill="white" fill-opacity="0.923"/>
+              <path d="M37.3948 60.7853C37.6916 60.6255 38.0487 60.6255 38.3455 60.7853L46.2055 65.0192C46.5301 65.1941 46.7325 65.533 46.7325 65.9016V74.2521C46.7325 74.6207 46.5301 74.9597 46.2055 75.1345L38.3455 79.3684C38.0487 79.5282 37.6916 79.5282 37.3948 79.3684L29.5348 75.1345C29.2102 74.9597 29.0078 74.6207 29.0078 74.2521V65.9016C29.0078 65.533 29.2102 65.1941 29.5348 65.0192L37.3948 60.7853Z" stroke="#FCFCFC" stroke-width="4.81106"/>
+              <path d="M63.8675 46.0803C64.1642 45.9204 64.5214 45.9204 64.8181 46.0803L72.6782 50.3141C73.0027 50.489 73.2051 50.8279 73.2051 51.1966V59.547C73.2051 59.9157 73.0027 60.2546 72.6782 60.4294L64.8181 64.6633C64.5214 64.8231 64.1642 64.8231 63.8675 64.6633L56.0074 60.4294C55.6829 60.2546 55.4805 59.9157 55.4805 59.547V51.1966C55.4805 50.8279 55.6829 50.489 56.0074 50.3141L63.8675 46.0803Z" stroke="#FCFCFC" stroke-width="4.81106"/>
+              <path d="M55.4805 31.5029L63.8158 35.9928C64.1404 36.1677 64.3428 36.5066 64.3428 36.8753V45.8243" stroke="#FCFCFC" stroke-width="4.81106"/>
+              <path d="M10.8089 46.1232C11.1056 45.9634 11.4628 45.9634 11.7595 46.1232L19.6196 50.3571C19.9442 50.5319 20.1465 50.8709 20.1465 51.2395V59.59C20.1465 59.9586 19.9442 60.2975 19.6196 60.4724L11.7595 64.7063C11.4628 64.8661 11.1056 64.8661 10.8089 64.7063L2.94885 60.4724C2.62427 60.2975 2.42188 59.9586 2.42188 59.59V51.2395C2.42188 50.8709 2.62427 50.5319 2.94885 50.3571L10.8089 46.1232Z" stroke="#FCFCFC" stroke-width="4.81106"/>
+              <path d="M20.1436 32.1328L11.8082 36.6227C11.4836 36.7976 11.2812 37.1365 11.2812 37.5052V46.4541" stroke="#FCFCFC" stroke-width="4.81106"/>
+            </svg>
+          </div>
+          <p
+            class="text-light-12 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight">
+            {title}
+          </p>
+          <p class="text-light-12 lg:text-xl max-w-2xl mt-4 mx-auto text-base">
+            {slogan}
+          </p>
         </div>
-        <p
-          class="dark12 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight">
-          {title}
-        </p>
-        <p class="dark12 lg:text-xl max-w-2xl mt-4 mx-auto text-base">
-          {slogan}
-        </p>
+        <div class="flex justify-center gap-6 mt-10 flex-col sm:flex-row">
+          <a href="/researchers">
+            <div class="border backdrop-blur-lg text-light-12 border-light-11 hover:bg-light-12 h-full p-4 rounded-2xl hover:text-dark-12 transition duration-300">
+              <div class="flex items-center gap-3">
+                <div
+                class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
+                  For Researchers
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                  <path d="M36.6654 17.3333V27.3333M36.6654 17.3333L19.9987 9L3.33203 17.3333L19.9987 25.6667L36.6654 17.3333Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 20.666V28.9993C15 33.9993 25 33.9993 30 28.9993V20.666" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>    
+            </div>
+          </a>
+          <a href="/journals">
+            <div class="border backdrop-blur-lg text-light-12 border-light-11 hover:bg-light-12 h-full p-4 rounded-2xl hover:text-dark-12 transition duration-300">
+              <div class="flex items-center gap-3">
+                <div
+                class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
+                  For Journals
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                  <path d="M3.33203 5.33398H13.332C15.1001 5.33398 16.7958 6.03636 18.0461 7.28661C19.2963 8.53685 19.9987 10.2325 19.9987 12.0007V35.334C19.9987 34.0079 19.4719 32.7361 18.5342 31.7984C17.5966 30.8608 16.3248 30.334 14.9987 30.334H3.33203V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M36.6667 5.33398H26.6667C24.8986 5.33398 23.2029 6.03636 21.9526 7.28661C20.7024 8.53685 20 10.2325 20 12.0007V35.334C20 34.0079 20.5268 32.7361 21.4645 31.7984C22.4021 30.8608 23.6739 30.334 25 30.334H36.6667V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>    
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="flex justify-center gap-6 mt-10 flex-col sm:flex-row">
-        <a href="/researchers">
-          <div class="border backdrop-blur-lg text-white border-gray-200 hover:bg-white h-full p-4 rounded-2xl hover:text-black transition duration-300">
-            <div class="flex items-center gap-3">
-              <div
-              class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
-                For Researchers
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                <path d="M36.6654 17.3333V27.3333M36.6654 17.3333L19.9987 9L3.33203 17.3333L19.9987 25.6667L36.6654 17.3333Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 20.666V28.9993C15 33.9993 25 33.9993 30 28.9993V20.666" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>    
-          </div>
-        </a>
-        <a href="/journals">
-          <div class="border backdrop-blur-lg text-white border-gray-200 hover:bg-white h-full p-4 rounded-2xl hover:text-black transition duration-300">
-            <div class="flex items-center gap-3">
-              <div
-              class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
-                For Journals
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-                <path d="M3.33203 5.33398H13.332C15.1001 5.33398 16.7958 6.03636 18.0461 7.28661C19.2963 8.53685 19.9987 10.2325 19.9987 12.0007V35.334C19.9987 34.0079 19.4719 32.7361 18.5342 31.7984C17.5966 30.8608 16.3248 30.334 14.9987 30.334H3.33203V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M36.6667 5.33398H26.6667C24.8986 5.33398 23.2029 6.03636 21.9526 7.28661C20.7024 8.53685 20 10.2325 20 12.0007V35.334C20 34.0079 20.5268 32.7361 21.4645 31.7984C22.4021 30.8608 23.6739 30.334 25 30.334H36.6667V5.33398Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>    
-          </div>
-        </a>
-      </div>
-    </div>
   </div>
 </section>

@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "lucide": "^0.287.0",
-    "markdown-it": "^13.0.2"
+    "markdown-it": "^13.0.2",
+    "types": "^0.1.1"
   }
 }

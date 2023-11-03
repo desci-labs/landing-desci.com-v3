@@ -9,8 +9,8 @@ const { slogan } = Astro.props;
 
 <section style="background-color: #161616; background-image: url(landscape.png); background-size: cover; background-position: top">
   <Navigation />
-  <div style="background: linear-gradient(to bottom, transparent, rgba(22, 22, 22, 0.8));" class="lg:h-screen">
-      <div class="mx-auto w-full max-w-7xl justify-center px-8 py-24">
+  <div style="background: linear-gradient(to bottom, transparent, rgba(22, 22, 22, 0.8));" class="lg:h-screen xl:h-200">
+      <div class="mx-auto w-full max-w-7xl flex flex-col justify-center h-full px-8 py-24">
         <div class="text-center max-w-4xl mx-auto">
           <div class="flex justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="82" viewBox="0 0 76 82" fill="none">
@@ -30,10 +30,10 @@ const { slogan } = Astro.props;
             {slogan}
           </p>
         </div>
-        <div class="flex justify-center gap-6 mt-10 flex-col sm:flex-row">
+        <div class="flex justify-center gap-6 mt-10 grid grid-cols-1 mx-auto w-full md:grid-cols-2 lg:pb-56 md:max-w-xl ">
           <a href="/researchers">
-            <div class="border backdrop-blur-lg text-light-12 border-light-11 hover:bg-light-12 h-full p-4 rounded-2xl hover:text-dark-12 transition duration-300">
-              <div class="flex items-center gap-3">
+            <div class="button-primary w-full"> <!--"border backdrop-blur-lg text-light-12 border-light-11 hover:bg-light-12 h-full p-4 rounded-2xl hover:text-dark-12 transition duration-300"-->
+              <div class="flex items-center gap-2">
                 <div
                 class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
                   For Researchers
@@ -46,8 +46,8 @@ const { slogan } = Astro.props;
             </div>
           </a>
           <a href="/journals">
-            <div class="border backdrop-blur-lg text-light-12 border-light-11 hover:bg-light-12 h-full p-4 rounded-2xl hover:text-dark-12 transition duration-300">
-              <div class="flex items-center gap-3">
+            <div class="button-secondary w-full">
+              <div class="flex items-center gap-2">
                 <div
                 class="flex w-full justify-center text-lg font-semibold leading-6 font-display">
                   For Journals

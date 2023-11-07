@@ -1,5 +1,6 @@
 ---
 const { m_header } = Astro.props;
+const { m_subheader } = Astro.props;
 const { m_item1_caption } = Astro.props;
 const { m_item1_value } = Astro.props;
 const { m_item1_subheader } = Astro.props;
@@ -9,6 +10,7 @@ const { m_item2_subheader } = Astro.props;
 const { m_item3_caption } = Astro.props;
 const { m_item3_value } = Astro.props;
 const { m_item3_subheader } = Astro.props;
+
 
 ---
 
@@ -21,6 +23,10 @@ const { m_item3_subheader } = Astro.props;
           class="light12 font-extrabold lg:text-5xl text-4xl tracking-tighter lg:pb-8">
           {m_header}
         </p>
+        <p
+          class="mt-4 text-lg max-w-xl tracking-tight text-dark-11 mx-auto">
+          {m_subheader} <a href="https://docs.desci.com" class="text-dark-12 font-semibold hover:text-dark-11"> Learn more.</a>
+      </p>
       </div>
     </div>
     <div class="mx-auto pt-12">

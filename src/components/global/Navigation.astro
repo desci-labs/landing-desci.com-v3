@@ -58,6 +58,10 @@ const { activePage } = Astro.props;
           href="/journals">Journals</a
         >
         <a
+          class={`nav-link ${activePage === 'institutions' ? 'active' : ''}`}
+          href="/institutions">Institutions</a
+        >
+        <a
           class="button-primary"
           href="/login">Enter App</a
         >

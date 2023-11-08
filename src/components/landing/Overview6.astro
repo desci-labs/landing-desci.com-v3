@@ -34,7 +34,7 @@ const { ov_item6_icon } = Astro.props;
           {ov_audience}
         </p>
         <p
-          class="light12 font-extrabold lg:text-5xl text-4xl tracking-tighter">
+          class="light12 font-extrabold lg:text-5xl text-4xl tracking-tighter max-w-2xl">
           {ov_header}
         </p><p
           class="mt-4 text-lg max-w-xl tracking-tight text-light-11 mx-auto">
@@ -59,9 +59,8 @@ const { ov_item6_icon } = Astro.props;
               class="mt-4 text-lg font-semibold leading-6 text-black font-display tracking-tight">
               {ov_item1_header}
             </p>
-          </div><div class="mt-4 text-gray-500 text-sm">
-            {ov_item1_content}
           </div>
+          <div class="mt-4 text-gray-500 text-sm" set:html={ov_item1_content}></div>
         </div>
         <div>
           <div>
@@ -77,9 +76,8 @@ const { ov_item6_icon } = Astro.props;
               class="mt-4 text-lg font-semibold leading-6 text-black font-display tracking-tight">
               {ov_item2_header}
             </p>
-          </div><div class="mt-4 text-gray-500 text-sm">
-            {ov_item2_content}
           </div>
+          <div class="mt-4 text-gray-500 text-sm" set:html={ov_item2_content}></div>
         </div>
         <div>
           <div>
@@ -95,10 +93,8 @@ const { ov_item6_icon } = Astro.props;
               class="mt-4 text-lg font-semibold leading-6 text-black font-display tracking-tight">
               {ov_item3_header}
             </p>
-          </div><div class="mt-4 text-gray-500 text-sm">
-            {ov_item3_content} 
-            <a href="https://doi.org/10.1371/journal.pone.0230416" class="text-dark-12 font-bold hover:text-dark-11"> Learn more.</a>
           </div>
+          <div class="mt-4 text-gray-500 text-sm" set:html={ov_item3_content}></div>
         </div>
         <div>
           <div>
@@ -114,9 +110,8 @@ const { ov_item6_icon } = Astro.props;
               class="mt-4 text-lg font-semibold leading-6 text-black font-display tracking-tight">
               {ov_item4_header}
             </p>
-          </div><div class="mt-4 text-gray-500 text-sm">
-            {ov_item4_content}
           </div>
+          <div class="mt-4 text-gray-500 text-sm" set:html={ov_item4_content}></div>
         </div>
         <div>
           <div>
@@ -132,9 +127,8 @@ const { ov_item6_icon } = Astro.props;
               class="mt-4 text-lg font-semibold leading-6 text-black font-display tracking-tight">
               {ov_item5_header}
             </p>
-          </div><div class="mt-4 text-gray-500 text-sm">
-            {ov_item5_content}
           </div>
+          <div class="mt-4 text-gray-500 text-sm" set:html={ov_item5_content}></div>
         </div>
         <div>
           <div>
@@ -150,9 +144,8 @@ const { ov_item6_icon } = Astro.props;
               class="mt-4 text-lg font-semibold leading-6 text-black font-display tracking-tight">
               {ov_item6_header}
             </p>
-          </div><div class="mt-4 text-gray-500 text-sm">
-            {ov_item6_content}
           </div>
+          <div class="mt-4 text-gray-500 text-sm" set:html={ov_item6_content}></div>
         </div>
       </div>
     </div>

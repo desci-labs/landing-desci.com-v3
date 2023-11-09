@@ -258,3 +258,7 @@
 .nav-link.active{
   border-color: var(--gray-dark-a12);
 }
+
+.h-90per {
+  height: 90%;
+}

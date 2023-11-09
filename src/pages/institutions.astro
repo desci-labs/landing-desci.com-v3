@@ -14,7 +14,7 @@ const ov_header = "Research data management made easy"
 // Overview Items
 
 const ov_item1_header = "Own your data, share it seamlessly"
-const ov_item1_content = "DeSci Labs uses decentralized technology to seamlessly integrate researchers, publishers, and libraries. Through Nodes, publishers can disseminate your data without ever taking it off your server."
+const ov_item1_content = "DeSci Labs uses decentralized technology to seamlessly connect researchers, publishers, and libraries. Through Nodes, publishers can disseminate your data without ever taking it off your server."
 const ov_item1_icon = "layers-outline"
 
 const ov_item2_header = "Use PID containers to organize PID collections"
@@ -22,23 +22,44 @@ const ov_item2_content = "Simplify the way you manage research data by grouping 
 const ov_item2_icon = "code-slash-outline"
 
 const ov_item3_header = "Make metadata easy for your researchers"
-const ov_item3_content = "The DeSci Labs metadata creation interface makes metadata easy by linking into global metadata template repositories.  Created by researchers, for researchers, these repositories are an important part of data discoverability."
+const ov_item3_content = "Created by researchers for researchers, these controlled vocabularies and ontologies are an important part of making data findable, accessible, interoperable, and reusable (FAIR)."
 const ov_item3_icon = "arrow-redo-outline"
 
 const ov_item4_header = "Get ahead of the compliance curve"
-const ov_item4_content = "The FAIR Principles and Research Software Management are coming, make sure your institution is prepared. We can help you stay ahead in the ever-evolving landscape of data management regulations. Our proactive compliance tools help you meet and exceed standards, ensuring your data management practices are always a step ahead."
+const ov_item4_content = `The <a href="https://doi.org/10.1371/journal.pone.0230416" class="text-dark-11 font-semibold hover:text-dark-12" target="_blank" rel="noopener noreferrer">FAIR principles</a> and research software management are coming. Make sure your institution is prepared to meet all funder requirements. We can help you to stay ahead in the fast-evolving landscape of data management and open science mandates.`
 const ov_item4_icon = "key-outline"
 
 const ov_item5_header = "Help your researchers improve their impact"
-const ov_item5_content = `Sharing open data alongside a publication has shown to <a href="https://doi.org/10.1371/journal.pone.0230416" class="text-dark-11 font-semibold hover:text-dark-12" target="_blank" rel="noopener noreferrer"> increase citations by 25%.</a> By making data sharing easy for your researchers, you give them a leg up in their community.`
+const ov_item5_content = `Manuscripts with data receive on average <a href="https://doi.org/10.1371/journal.pone.0230416" class="text-dark-11 font-semibold hover:text-dark-12" target="_blank" rel="noopener noreferrer">25% more citations.</a> By making data sharing easy, you increase the impact of your researchers and your institution.`
 const ov_item5_icon = "play-forward-outline"
 
-const ov_item6_header = "Push open source and open science forward"
-const ov_item6_content = "Join the vanguard of the open science movement. By leveraging our fully open-source technologies, you contribute to a culture of transparency and collaboration in the scientific community, fostering innovation and progress."
+const ov_item6_header = "Accelerate open science"
+const ov_item6_content = "Join the vanguard of the open science movement. By leveraging our fully open-source technologies, you contribute to a culture of transparency, accessibility, and collaboration in the scientific community, fostering innovation and trust."
 const ov_item6_icon = "lock-open-outline"
 
 
-// INPUT CONTENT FOR FEATURES SECTION HERE
+// INPUT CONTENT FOR SHORTER OVERVIEW SECTION HERE
+
+const ov3_audience = ""
+const ov3_header = "Truly persistent identifiers with super-powers for all your content"
+const ov3_subheader = ""
+
+// Overview Items
+
+const ov3_item1_header = "Automatically generate a PID for every file you upload"
+const ov3_item1_content = "Every file needs a PID, you can simplify PID provisioning through a simple drag-and-drop process. DeSci Labs Technology takes a fingerprint of every file the moment it’s uploaded. These data fingerprints are based on the content in the file, making them completely immune to content drift. You can rest easy knowing that your data is safe on your servers."
+const ov3_item1_icon = "tablet-landscape-outline"
+
+const ov3_item2_header = "Control who has access to data, both internally and externally"
+const ov3_item2_content = "While open data should be the standard, IP and privacy restrictions need to be taken into account. Through DeSci Nodes technology, you can make identity and access management easy. The RDM interface integrates with Microsoft for internal employees and ORCID for external collaborators."
+const ov3_item2_icon = "globe-outline"
+
+const ov3_item3_header = "Keep track of your data across publications, labs, and departments"
+const ov3_item3_content = "By using PID Containers to organize your data, you get the flexibility to track data usage at all levels of research. Gain visibility into the complete lifecycle of your research data, from generation to publication. Setting up your researchers is as easy as a download and a training course, we'll be here to help you along the way."
+const ov3_item3_icon = "pin-outline"
+
+
+// INPUT CONTENT FOR FEATURES SECTION HERE (currently not being used!)
 
 const ft_header = "Transparency can be a problem of the past"
 
@@ -49,7 +70,7 @@ const ft_tab1_item1_header = "Automatically generate a PID for every file you up
 const ft_tab1_item1_content = "Every file needs a PID, you can simplify PID provisioning through a simple drag-and-drop process. DeSci Labs Technology takes a fingerprint of every file the moment it’s uploaded. These data fingerprints are based on the content in the file, making them completely immune to content drift. You can rest easy knowing that your data is safe on your servers."
 const ft_tab1_item2_header = ""
 const ft_tab1_item2_content = ""
-const ft_tab1_media = "test-video.mp4"
+const ft_tab1_media = "showcase.mp4"
 const ft_tab1_media_phone = "drive-phone.png"
 
 // Second Tab
@@ -74,29 +95,6 @@ const ft_tab3_media_phone = "drive-phone.png"
 
 
 
-// INPUT CONTENT FOR TESTIMONIALS HERE
-
-const tm_header = "Trusted by researchers"
-
-const tm_item1_name = "Marco Giometto & Atharva Sate"
-const tm_item1_position = "Civil Engineering at Columbia"
-const tm_item1_content = "Atharva and Marco created a fully reproducible, data-heavy publication containing over 18 terabytes of open data. Without Nodes, this breakthrough dataset in fluid dynamics would have remained in his lab's internal servers. Nodes made it possible to easily import parts of this dataset with a single line of python, or send a containerised compute job directly to where the data lives."
-const tm_item1_image = "marco-pfp.jpg"
-const tm_item1_link = "https://capybara.desci.com/dpid/76"
-
-const tm_item2_name = "Alkes Price"
-const tm_item2_position = "Geneticist at Harvard"
-const tm_item2_content = "Alkes and his lab were sharing terabytes of genetic data with their community. The popularity of the dataset caused egress bills to skyrocket, limiting their ability to share it for free. This data is now available to anyone via Nodes, enabling edge compute without egress fees. Other scientists can now re-use this data without the need to move it around the globe."
-const tm_item2_image = "alkes-pfp.jpeg"
-const tm_item2_link = "https://capybara.desci.com/dpid/75"
-
-const tm_item3_name = "Megan Ansdell"
-const tm_item3_position = "Astrophysicist at NASA"
-const tm_item3_content = "Megan turned her PhD thesis into a Node, primarily to share her code with the astrophysics community. During her thesis, she took a lot of care to make her work reproducible. With Nodes she finally has a medium to showcase this effort and share the outcome with everyone. Nodes allows her to create interactive links between her paper, data, and code."
-const tm_item3_image = "megan-pfp.jpeg"
-const tm_item3_link = "https://capybara.desci.com/dpid/46"
-
-
 
 
 
@@ -114,6 +112,7 @@ const tm_item3_link = "https://capybara.desci.com/dpid/46"
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/landing/HeroInstitutions.astro";
 import Overview from "../components/landing/Overview6.astro";
+import Overview3 from "../components/landing/Overview3.astro";
 import Features from "../components/landing/Features.astro";
 import Testimonial from "../components/global/Testimonial.astro";
 import Cta from "../components/global/Cta.astro";
@@ -198,29 +197,14 @@ Use AstroSeo in all the pages you want different Seo than the index page
     ov_item4_icon={ov_item4_icon}
     ov_item5_icon={ov_item5_icon}
     ov_item6_icon={ov_item6_icon}/>
-  <Features 
-    ft_header={ft_header}
-    ft_tab1_label={ft_tab1_label}
-    ft_tab2_label={ft_tab2_label}
-    ft_tab3_label={ft_tab3_label}
-    ft_tab1_item1_header={ft_tab1_item1_header}
-    ft_tab1_item1_content={ft_tab1_item1_content}
-    ft_tab1_item2_header={ft_tab1_item2_header}
-    ft_tab1_item2_content={ft_tab1_item2_content}
-    ft_tab1_media={ft_tab1_media}
-    ft_tab2_item1_header={ft_tab2_item1_header}
-    ft_tab2_item1_content={ft_tab2_item1_content}
-    ft_tab2_item2_header={ft_tab2_item2_header}
-    ft_tab2_item2_content={ft_tab2_item2_content}
-    ft_tab2_media={ft_tab2_media}
-    ft_tab3_item1_header={ft_tab3_item1_header}
-    ft_tab3_item1_content={ft_tab3_item1_content}
-    ft_tab3_item2_header={ft_tab3_item2_header}
-    ft_tab3_item2_content={ft_tab3_item2_content}
-    ft_tab3_media={ft_tab3_media}
-    ft_tab1_media_phone={ft_tab1_media_phone}
-    ft_tab2_media_phone={ft_tab2_media_phone}
-    ft_tab3_media_phone={ft_tab3_media_phone} />
+  <Overview3 
+    ov_header={ov3_header} 
+    ov_item1_header={ov3_item1_header}
+    ov_item1_content={ov3_item1_content}
+    ov_item2_header={ov3_item2_header}
+    ov_item2_content={ov3_item2_content}
+    ov_item3_header={ov3_item3_header}
+    ov_item3_content={ov3_item3_content} />
   <Cta />
   <Footer />
 </BaseLayout>

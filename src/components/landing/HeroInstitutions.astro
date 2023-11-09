@@ -2,37 +2,35 @@
 import Navigation from "../global/Navigation.astro";
 const { title } = Astro.props;
 const { slogan } = Astro.props;
-
-
 ---
 
-
-<section style="background-color: #161616; background-image: url('storyboard-14-min.jpg'); background-size: cover; background-position: top">
+<section
+  style="background-color: #161616; background-image: url('storyboard-14-min.jpg'); background-size: cover; background-position: top"
+>
   <div class="bg-dark-11">
-  <Navigation activePage="institutions"/>
-  <div
-    class="mx-auto w-full max-w-5xl pt-24 pb-40 px-24 lg:px-16">
-    <div>
-      <div class="flex-col max-w-4xl mr-auto">
-        <p
-          class="text-light-12 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight">
-          {title}
-        </p>
-        <p class="text-light-12 lg:text-xl max-w-sm mt-4 text-base">
-          {slogan}
-        </p>
-      </div>
-      <div class="gap-3 mt-10 flex-col sm:flex-row">
-        <a
-          class="button-primary"
-          href="https://nodes.desci.com"
-          target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.922 0.11495C10.6368 -0.0383159 10.2938 -0.0383171 10.0086 0.114949L6.52592 1.98651C6.213 2.15467 6.0178 2.48117 6.0178 2.83641V6.54522C6.0178 6.8038 6.12123 7.04716 6.2982 7.2253L2.82004 8.82075C2.57805 8.93175 2.42293 9.17357 2.42293 9.4398V11.2558C1.30706 11.5309 0.425781 12.4663 0.425781 13.668C0.425781 15.1061 1.68795 16.1629 3.10388 16.1629C4.51981 16.1629 5.78198 15.1061 5.78198 13.668C5.78198 12.4664 4.90083 11.531 3.78507 11.2558V9.87669L7.74173 8.06175C7.74615 8.05973 7.75053 8.05766 7.75488 8.05556L9.74581 9.12547V13.2012C8.37472 13.5092 7.29713 14.6428 7.29713 16.0828C7.29713 17.7774 8.78926 19.0475 10.4959 19.0475C12.2026 19.0475 13.6947 17.7774 13.6947 16.0828C13.6947 14.5948 12.5441 13.434 11.108 13.1732V9.16677L13.161 8.06349C13.1712 8.06884 13.1816 8.07396 13.1922 8.07884L17.0656 9.8657V11.2556C15.9493 11.5304 15.0676 12.466 15.0676 13.668C15.0676 15.1061 16.3298 16.1629 17.7457 16.1629C19.1617 16.1629 20.4238 15.1061 20.4238 13.668C20.4238 12.4667 19.5431 11.5315 18.4278 11.256V9.42984C18.4278 9.16414 18.2732 8.9227 18.032 8.8114L14.6201 7.23747C14.8046 7.05833 14.9128 6.80974 14.9128 6.54522V2.83641C14.9128 2.48117 14.7176 2.15467 14.4047 1.98651L10.922 0.11495ZM7.37994 3.07393L10.4653 1.41588L13.5507 3.07393V6.30769L10.4653 7.96575L7.37994 6.30769V3.07393ZM1.78792 13.668C1.78792 13.1178 2.28603 12.5657 3.04069 12.5364C3.06154 12.5384 3.08265 12.5393 3.104 12.5393C3.12532 12.5393 3.14642 12.5384 3.16724 12.5364C3.92181 12.5658 4.41984 13.1178 4.41984 13.668C4.41984 14.2334 3.8938 14.8008 3.10388 14.8008C2.31396 14.8008 1.78792 14.2334 1.78792 13.668ZM10.4959 14.4122C9.38397 14.4122 8.59117 15.2173 8.59117 16.0828C8.59117 16.9483 9.38397 17.7535 10.4959 17.7535C11.6079 17.7535 12.4006 16.9483 12.4006 16.0828C12.4006 15.2173 11.6079 14.4122 10.4959 14.4122ZM17.7457 12.5352C16.9558 12.5352 16.4298 13.1025 16.4298 13.668C16.4298 14.2334 16.9558 14.8008 17.7457 14.8008C18.5356 14.8008 19.0617 14.2334 19.0617 13.668C19.0617 13.1025 18.5356 12.5352 17.7457 12.5352Z" fill="currentColor"/>
-          </svg>Launch
+    <Navigation activePage="institutions" />
+    <div class="mx-auto w-full max-w-5xl pt-24 pb-40 px-24 lg:px-16">
+      <div>
+        <div class="flex-col max-w-4xl mr-auto">
+          <p
+            class="text-light-12 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight"
+          >
+            {title}
+          </p>
+          <p class="text-light-12 lg:text-xl max-w-sm mt-4 text-base">
+            {slogan}
+          </p>
+        </div>
+        <div class="gap-3 mt-10 flex-col sm:flex-row">
+          <a
+            class="button-primary launch-button"
+            href="https://nodes.desci.com"
+            target="_blank"
+          >
+            <img src="nodes-c.png" class="w-7" />Launch
           </a>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </section>

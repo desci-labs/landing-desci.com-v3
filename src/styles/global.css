@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 /* CSS */
-:root { 
-  font-family: 'Inter', sans-serif; 
+:root {
+  font-family: "Inter", sans-serif;
 
   --gray-a1: #00000003;
   --gray-a2: #00000006;
@@ -30,10 +30,11 @@
   --gray-dark-a10: #ffffff72;
   --gray-dark-a11: #ffffffaf;
   --gray-dark-a12: #ffffffed;
-
 }
 @supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 .light12 {
@@ -111,22 +112,22 @@
 }
 
 .border {
-  border-color: var(--gray-dark-a6)
+  border-color: var(--gray-dark-a6);
 }
 
 .tab-buttons {
   display: inline-flex;
   background-color: var(--gray-dark-a2);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .tab-button {
   cursor: pointer;
-  padding: 1rem
+  padding: 1rem;
 }
 
 .tab-button.active {
-  background-color:  var(--gray-dark-a3);
+  background-color: var(--gray-dark-a3);
 }
 
 .tab-content {
@@ -163,7 +164,7 @@
   border: 1px solid transparent;
 }
 
-.button-primary:hover{
+.button-primary:hover {
   background-color: var(--gray-dark-a6);
   color: var(--gray-dark-a12);
   border-color: white;
@@ -190,7 +191,7 @@
   border: 1px solid transparent;
 }
 
-.button-primary-black:hover{
+.button-primary-black:hover {
   background-color: var(--gray-dark-a3);
   color: var(--gray-a12);
   border-color: var(--gray-a12);
@@ -217,7 +218,7 @@
   gap: 0.75rem;
 }
 
-.button-secondary:hover{
+.button-secondary:hover {
   background-color: var(--gray-dark-a6);
 }
 
@@ -231,7 +232,7 @@
 }
 
 .profile-image {
-  width: 56px; 
+  width: 56px;
   height: 56px;
   overflow: hidden;
   border-radius: 50%;
@@ -255,10 +256,17 @@
   }
 }
 
-.nav-link.active{
+.nav-link.active {
   border-color: var(--gray-dark-a12);
 }
 
 .h-90per {
   height: 90%;
+}
+
+.launch-button img {
+  transition: all 0.1s ease;
+}
+.launch-button:hover img {
+  filter: invert(1);
 }

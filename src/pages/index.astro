@@ -1,88 +1,75 @@
 ---
-
 // INPUT CONTENT FOR HERO SECTION HERE
 
-const title = "Let's build the future of science, together"
-const slogan = "New infrastructure for the next era of science"
-
-
-
+const title = "Let's build the future of science, together";
+const slogan = "New infrastructure for the next era of science";
 
 // INPUT CONTENT FOR OVERVIEW SECTION HERE
 
-const ov_header = "Opening up science to everyone"
-const ov_subheader = "DeSci infrastructure is designed to be accessible to all and controlled by no one, an open protocol where anyone can participate, collaborate, and contribute towards moving science forwards."
+const ov_header = "Opening up science to everyone";
+const ov_subheader =
+  "DeSci infrastructure is designed to be accessible to all and controlled by no one, an open protocol where anyone can participate, collaborate, and contribute towards moving science forwards.";
 
 // Overview Items
 
-const ov_item1_header = "Publications, reimagined"
-const ov_item1_content = "Replace static PDFs with rich, interoperable research ecosystems. Unite manuscripts, code and data with seamless simplicity, all in one place."
+const ov_item1_header = "Publications, reimagined";
+const ov_item1_content =
+  "Replace static PDFs with rich, interoperable research ecosystems. Unite manuscripts, code and data with seamless simplicity, all in one place.";
 
-const ov_item2_header = "Trust, enhanced"
-const ov_item2_content = "Build trust in scientific findings. Reward quality research and open science practices with verified badges as digitally signed attestations."
+const ov_item2_header = "Trust, enhanced";
+const ov_item2_content =
+  "Build trust in scientific findings. Reward quality research and open science practices with verified badges as digitally signed attestations.";
 
-const ov_item3_header = "Credit, where it’s due"
-const ov_item3_content = "Credit is transparently tracked, and authors can accept new collaborators that have contributed to substantially enrich their work."
+const ov_item3_header = "Credit, where it’s due";
+const ov_item3_content =
+  "Credit is transparently tracked, and authors can accept new collaborators that have contributed to substantially enrich their work.";
 
-const ov_item4_header = "Access, ensured"
-const ov_item4_content = "Simple, usable persistent identifiers for your work. No more dead links, content drift, or data silos. Everything is trackable, timestamped, transparent and owned by you."
-
+const ov_item4_header = "Access, ensured";
+const ov_item4_content =
+  "Simple, usable persistent identifiers for your work. No more dead links, content drift, or data silos. Everything is trackable, timestamped, transparent and owned by you.";
 
 // INPUT CONTENT FOR TARGET GROUP SECTION
 
-const tg_header = "A new frontier for open science"
-const tg_subheader = "No single individual, organisation, or institution can do it alone. But collectively, we can create a world in which anyone can participate, collaborate, and contribute towards moving science forward."
+const tg_header = "A new frontier for open science";
+const tg_subheader =
+  "No single individual, organisation, or institution can do it alone. But collectively, we can create a world in which anyone can participate, collaborate, and contribute towards moving science forward.";
 
 // Target Group Items
 
-const tg1_name = "Researchers"
-const tg1_argument = "Bring your research to life"
+const tg1_name = "Researchers";
+const tg1_argument = "Bring your research to life";
 
-const tg2_name = "Journals & Curation Communities"
-const tg2_argument = "Lead open science forward"
+const tg2_name = "Journals & Curation Communities";
+const tg2_argument = "Lead open science forward";
 
-const tg3_name = "Libraries & Universities"
-const tg3_argument = "Reclaim institutional sovereignty"
+const tg3_name = "Libraries & Universities";
+const tg3_argument = "Reclaim institutional sovereignty";
 
-const tg5_name = "Network Operators"
+const tg5_name = "Network Operators";
 
-const tg4_name = "Application Developers"
-
+const tg4_name = "Application Developers";
 
 // INPUT SECTION FOR METRICS
 
-const m_header = "A protocol for open science powered by the decentralized web"
-const m_subheader = "Come build the next generation of scientific applications on a radically open and extensible protocol."
+const m_header = "A protocol for open science powered by the decentralized web";
+const m_subheader =
+  "Come build the next generation of scientific applications on a radically open and extensible protocol.";
 
 // Metric Items
 
-const m_item1_caption = "Persistent identifiers issued"
-const m_item1_value = "20,000+"
-const m_item1_subheader = "Uniquely identified digital objects"
+const m_item1_caption = "Persistent identifiers issued";
+const m_item1_value = "20,000+";
+const m_item1_subheader = "Uniquely identified digital objects";
 
-const m_item2_caption = "Data stored"
-const m_item2_value = "20+ Terabytes"
-const m_item2_subheader = "Digital object data secured by the network"
+const m_item2_caption = "Data stored";
+const m_item2_value = "20+ Terabytes";
+const m_item2_subheader = "Digital object data secured by the network";
 
-const m_item3_caption = "Addressable legacy PIDs"
-const m_item3_value = "190M+"
-const m_item3_subheader = "DOIs ready to be upgraded with dPIDs"
-
-
-
-
-
+const m_item3_caption = "Addressable legacy PIDs";
+const m_item3_value = "190M+";
+const m_item3_subheader = "DOIs ready to be upgraded with dPIDs";
 
 // INPUT SECTION END
-
-
-
-
-
-
-
-
-
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ProtocolHero from "../components/landing/ProtocolHero.astro";
@@ -92,12 +79,6 @@ import { AstroSeo } from "@astrolib/seo";
 import Welcome from "../components/landing/Welcome.astro";
 import Overview from "../components/landing/Overview3.astro";
 import Metrics from "../components/landing/Metrics.astro";
-
-
-
-
-
-
 ---
 
 <AstroSeo
@@ -123,33 +104,43 @@ import Metrics from "../components/landing/Metrics.astro";
     handle: "@DeSciLabs",
     site: "@site",
     cardType: "summary_large_image",
-  }}></AstroSeo>
-
+  }}
+/>
 <BaseLayout>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6R6GMN7NPT"
+  ></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-6R6GMN7NPT");
+  </script>
   <script>
-
     setTimeout(() => {
+      const tabButtons = document.querySelectorAll(".tab-button");
+      const tabPanes = document.querySelectorAll(".tab-pane");
 
-      const tabButtons = document.querySelectorAll('.tab-button');
-      const tabPanes = document.querySelectorAll('.tab-pane');
-      
-      tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          tabButtons.forEach(btn => btn.classList.remove('active'));
-          this.classList.add('active');
-          
-          tabPanes.forEach(pane => pane.classList.remove('active'));
-          const selectedTab = document.getElementById(this.getAttribute('data-tab'));
-          selectedTab.classList.add('active');
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+
+          tabPanes.forEach((pane) => pane.classList.remove("active"));
+          const selectedTab = document.getElementById(
+            this.getAttribute("data-tab")
+          );
+          selectedTab.classList.add("active");
         });
       });
     }, 0);
   </script>
-  <ProtocolHero 
-    slogan={slogan} 
-    title={title} />
-    <Welcome 
-    ov_header={ov_header} 
+  <ProtocolHero slogan={slogan} title={title} />
+  <Welcome
+    ov_header={ov_header}
     ov_subheader={ov_subheader}
     ov_item1_header={ov_item1_header}
     ov_item1_content={ov_item1_content}
@@ -158,7 +149,8 @@ import Metrics from "../components/landing/Metrics.astro";
     ov_item3_header={ov_item3_header}
     ov_item3_content={ov_item3_content}
     ov_item4_header={ov_item4_header}
-    ov_item4_content={ov_item4_content}/>
+    ov_item4_content={ov_item4_content}
+  />
   <TargetGroups
     tg_header={tg_header}
     tg_subheader={tg_subheader}
@@ -170,10 +162,10 @@ import Metrics from "../components/landing/Metrics.astro";
     tg3_argument={tg3_argument}
     tg4_name={tg4_name}
     tg5_name={tg5_name}
-    />
-  <Metrics 
-    m_header={m_header} 
-    m_subheader={m_subheader} 
+  />
+  <Metrics
+    m_header={m_header}
+    m_subheader={m_subheader}
     m_item1_caption={m_item1_caption}
     m_item1_value={m_item1_value}
     m_item1_subheader={m_item1_subheader}
@@ -182,6 +174,7 @@ import Metrics from "../components/landing/Metrics.astro";
     m_item2_subheader={m_item2_subheader}
     m_item3_caption={m_item3_caption}
     m_item3_value={m_item3_value}
-    m_item3_subheader={m_item3_subheader}/>
+    m_item3_subheader={m_item3_subheader}
+  />
   <Footer />
 </BaseLayout>

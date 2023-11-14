@@ -1,0 +1,41 @@
+---
+import Navigation from "../global/Navigation.astro";
+const { title } = Astro.props;
+const { slogan } = Astro.props;
+
+
+---
+
+
+<section style="background-color: #161616; background-image: url(constellation-min.jpg); background-size: cover; background-position: center">
+  <div class="bg-dark-11">
+  <Navigation />
+  <div class="h-full">
+      <div class="mx-auto w-full max-w-7xl flex flex-col justify-center h-full px-8 py-24 lg:pt-48 lg:pb-48">
+        <div class="text-center max-w-4xl mx-auto">
+          <p
+            class="text-light-12 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight lg:max-w-2xl">
+            {title}
+          </p>
+          <p class="text-light-12 lg:text-xl max-w-2xl mt-4 mx-auto text-base">
+            {slogan}
+          </p>
+        </div>
+        <div class="mx-auto flex gap-3 md:gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:max-w-3xl mt-10">
+          <a href="/researchers" class="button-primary">
+            For Researchers
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </a>
+          <a href="/journals" class="button-secondary">
+            For Journals
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-square"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7v10"/><path d="M11 7v10"/><path d="m15 7 2 10"/></svg>
+          </a>
+          <a href="/institutions" class="button-secondary">
+            For Institutions
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+</section>

@@ -32,10 +32,6 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Building tools to grow open science."
-        />
         <meta property="og:site_name" content="DeSci Labs" />
 
         {/* <!-- Open Graph / Facebook --> */}

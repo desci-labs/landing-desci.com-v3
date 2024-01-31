@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/global/NavigationWhiteBG.astro";
+import Terms from "../components/infopages/Terms.md";
+import Footer from "../components/global/Footer.astro";
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+<style>
+  @import '../styles/markdown.css';
+</style>
+
+<BaseLayout>
+  <Navigation />
+  <div class="max-w-4xl mx-auto py-32">
+    <div style="overflow:hidden; margin-top: -100px;">
+        <iframe src="https://v1.desci.com/contact" width="100%" class="md:h-[680px] h-[580px]" style="margin-top:-100px; overflow:hidden;" scrolling="no"></iframe>
+    </div>
+  </div>
+  <Footer />
+</BaseLayout>

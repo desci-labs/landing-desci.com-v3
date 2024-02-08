@@ -113,6 +113,7 @@ import Testimonial from "../components/global/Testimonial.astro";
 import Cta from "../components/global/Cta.astro";
 import Footer from "../components/global/Footer.astro";
 import { AstroSeo } from "@astrolib/seo";
+import Announcement from "../components/global/Announcement.astro";
 ---
 
 <!---
@@ -165,6 +166,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
     }, 0);
   </script>
   <Hero slogan={slogan} title={title} />
+  <Announcement />
   <Overview
     ov_header={ov_header}
     ov_subheader={ov_subheader}

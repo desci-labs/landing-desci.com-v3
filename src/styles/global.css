@@ -247,7 +247,7 @@
 
 .nav-link {
   color: var(--gray-dark-a12);
-  border-bottom: 4px solid transparent;
+  border-bottom: 1px solid transparent;
   padding: 2px 2px 2px 2px;
   transition: all 0.3s ease;
 

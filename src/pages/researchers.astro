@@ -52,7 +52,7 @@ const ft_tab1_item1_content =
   "Nodes are containers for research artefacts such as manuscripts, code, data, and anything you can think of. You can upload everything in one place, share privately with your lab and co-authors before publishing openly to the world. Nodes preserves content integrity with cryptographic hashes and stores published data on a distributed network.";
 const ft_tab1_item2_header = "";
 const ft_tab1_item2_content = "";
-const ft_tab1_media = "combine.mp4";
+const ft_tab1_media = "https://desci-labs-public.s3.amazonaws.com/combine2.mp4";
 const ft_tab1_media_phone = "combine.png";
 
 // Second Tab
@@ -113,6 +113,7 @@ import Testimonial from "../components/global/Testimonial.astro";
 import Cta from "../components/global/Cta.astro";
 import Footer from "../components/global/Footer.astro";
 import { AstroSeo } from "@astrolib/seo";
+import Announcement from "../components/global/Announcement.astro";
 ---
 
 <!---
@@ -165,6 +166,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
     }, 0);
   </script>
   <Hero slogan={slogan} title={title} />
+  <Announcement />
   <Overview
     ov_header={ov_header}
     ov_subheader={ov_subheader}

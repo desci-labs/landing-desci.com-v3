@@ -46,3 +46,19 @@ https://rsms.me/inter/
 
   gtag("config", "AW-16555145141");
 </script>
+<script>
+  window.gtag_report_conversion = function (url) {
+    var callback = function () {
+      if (typeof url != "undefined") {
+        window.location = url;
+      }
+    };
+    gtag("event", "conversion", {
+      send_to: "AW-16555145141/nMcCCNj1iK0ZELXvjdY9",
+      value: 1.0,
+      currency: "USD",
+      event_callback: callback,
+    });
+    return false;
+  };
+</script>

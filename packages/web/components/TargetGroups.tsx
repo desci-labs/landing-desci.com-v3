@@ -1,0 +1,146 @@
+interface Props {
+  header: string;
+  subheader: string;
+  tg1Name: string;
+  tg1Argument: string;
+  tg2Name: string;
+  tg2Argument: string;
+  tg3Name: string;
+  tg3Argument: string;
+  tg4Name: string;
+  tg5Name: string;
+}
+
+export default function TargetGroups({
+  header,
+  subheader,
+  tg1Name,
+  tg1Argument,
+  tg2Name,
+  tg2Argument,
+  tg3Name,
+  tg3Argument,
+  tg4Name,
+  tg5Name,
+}: Props) {
+  return (
+    <section className="bg-dark-1 xl:h-200 lg:flex lg:items-center">
+      <div className="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
+        <div className="max-w-3xl mx-auto md:text-center">
+          <p className="text-light-12 font-extrabold lg:text-5xl text-4xl tracking-tighter lg:pb-8">
+            {header}
+          </p>
+          <p className="mt-4 text-lg max-w-xl tracking-tight text-light-11 mx-auto lg:pb-8">
+            {subheader}
+          </p>
+        </div>
+
+        <div className="mx-auto pt-12">
+          <div className="mx-auto w-full gap-8 grid grid-cols-1 lg:grid-cols-3 max-w-2xl lg:max-w-7xl">
+            <a href="/researchers">
+              <div className="border border-light-3 h-full p-6 rounded-2xl bg-light-2 hover:bg-light-5 flex flex-col items-center gap-6 text-white transition duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <path
+                    d="M36.6654 17.3333V27.3333M36.6654 17.3333L19.9987 9L3.33203 17.3333L19.9987 25.6667L36.6654 17.3333Z"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M10 20.666V28.9993C15 33.9993 25 33.9993 30 28.9993V20.666"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <div className="flex justify-center text-center w-full text-2xl font-semibold leading-6 font-display">
+                  {tg1Name}
+                </div>
+                <p className="text-base">{tg1Argument}</p>
+              </div>
+            </a>
+
+            <a href="/journals">
+              <div className="border border-light-3 h-full p-6 rounded-2xl bg-light-2 hover:bg-light-5 flex flex-col items-center gap-6 text-white transition duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <path
+                    d="M3.33203 5.33398H13.332C15.1001 5.33398 16.7958 6.03636 18.0461 7.28661C19.2963 8.53685 19.9987 10.2325 19.9987 12.0007V35.334C19.9987 34.0079 19.4719 32.7361 18.5342 31.7984C17.5966 30.8608 16.3248 30.334 14.9987 30.334H3.33203V5.33398Z"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M36.6667 5.33398H26.6667C24.8986 5.33398 23.2029 6.03636 21.9526 7.28661C20.7024 8.53685 20 10.2325 20 12.0007V35.334C20 34.0079 20.5268 32.7361 21.4645 31.7984C22.4021 30.8608 23.6739 30.334 25 30.334H36.6667V5.33398Z"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <div className="flex justify-center text-center w-full text-2xl font-semibold leading-6 font-display">
+                  {tg2Name}
+                </div>
+                <p className="text-base">{tg2Argument}</p>
+              </div>
+            </a>
+
+            <a href="/institutions">
+              <div className="border border-light-3 h-full p-6 rounded-2xl bg-light-2 hover:bg-light-5 flex flex-col items-center gap-6 text-white transition duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="41"
+                  height="41"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M13.8307 20.4987C13.8307 22.7078 12.0399 24.4987 9.83073 24.4987C7.62159 24.4987 5.83073 22.7078 5.83073 20.4987C5.83073 18.2896 7.62159 16.4987 9.83073 16.4987C12.0399 16.4987 13.8307 18.2896 13.8307 20.4987ZM15.7324 23.6023C14.6159 25.721 12.392 27.1654 9.83073 27.1654C6.14883 27.1654 3.16406 24.1806 3.16406 20.4987C3.16406 16.8168 6.14883 13.832 9.83073 13.832C12.392 13.832 14.6159 15.2764 15.7324 17.3951L24.7754 11.7432C24.5945 11.1378 24.4974 10.4962 24.4974 9.83203C24.4974 6.15013 27.4822 3.16536 31.1641 3.16536C34.846 3.16536 37.8307 6.15013 37.8307 9.83203C37.8307 13.5139 34.846 16.4987 31.1641 16.4987C29.0081 16.4987 27.0911 15.4753 25.8725 13.8877L16.4582 19.7716C16.4841 20.0104 16.4974 20.253 16.4974 20.4987C16.4974 20.7444 16.4841 20.987 16.4582 21.2258L25.8725 27.1097C27.0911 25.5221 29.0081 24.4987 31.1641 24.4987C34.846 24.4987 37.8307 27.4835 37.8307 31.1654C37.8307 34.8473 34.846 37.832 31.1641 37.832C27.4822 37.832 24.4974 34.8473 24.4974 31.1654C24.4974 30.5011 24.5945 29.8596 24.7754 29.2542L15.7324 23.6023ZM31.1641 13.832C33.3732 13.832 35.1641 12.0412 35.1641 9.83203C35.1641 7.62289 33.3732 5.83203 31.1641 5.83203C28.9549 5.83203 27.1641 7.62289 27.1641 9.83203C27.1641 12.0412 28.9549 13.832 31.1641 13.832ZM35.1641 31.1654C35.1641 33.3745 33.3732 35.1654 31.1641 35.1654C28.9549 35.1654 27.1641 33.3745 27.1641 31.1654C27.1641 28.9562 28.9549 27.1654 31.1641 27.1654C33.3732 27.1654 35.1641 28.9562 35.1641 31.1654Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div className="flex justify-center text-center w-full text-2xl font-semibold leading-6 font-display">
+                  {tg3Name}
+                </div>
+                <p className="text-base">{tg3Argument}</p>
+              </div>
+            </a>
+          </div>
+
+          <div className="mx-auto w-full pt-12 gap-8 grid grid-cols-1 lg:grid-cols-2 max-w-2xl lg:max-w-2xl">
+            <a
+              href="https://codex.desci.com"
+              target="_blank"
+              className="button-secondary border-light-3 bg-light-2"
+            >
+              {tg4Name}
+            </a>
+            <a
+              href="https://codex.desci.com"
+              target="_blank"
+              className="button-secondary border-light-3 bg-light-2"
+            >
+              {tg5Name}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
